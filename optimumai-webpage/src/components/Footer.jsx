@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <img src="https://cmhq.tech/img/logo.png" alt="OptimumAI Logo" />
+          <img src="https://avatars.githubusercontent.com/u/126138092?s=48&v=4" alt="OptimumAI Logo" />
           <span>OptimumAI</span>
         </div>
         <div className="footer-links">
