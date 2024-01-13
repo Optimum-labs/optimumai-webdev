@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/home/Home';
 import About from './pages/About';
 import TeamSignup from './pages/TeamSignup';
 import GoogleFormsDashboard from './pages/GoogleFormsDashboard';
