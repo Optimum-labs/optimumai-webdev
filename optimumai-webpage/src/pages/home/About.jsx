@@ -1,12 +1,10 @@
 import React from "react";
-import aboutImage1 from "../assets/images/about/about-image-01.jpg";
-import aboutImage2 from "../assets/images/about/about-image-02.jpg";
+import aboutImage1 from "../../assets/images/about/about-image-01.jpg";
+import aboutImage2 from "../../assets/images/about/about-image-02.jpg";
 import { Link } from "react-router-dom";
-import Team from "../components/Team";
 
 const About = () => {
   return (
-    <>
     <section
       id="about"
       className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
@@ -191,10 +189,6 @@ const About = () => {
         </div>
       </div>
     </section>
-
-    <Team />
-    
-    </>
   );
 };
 
