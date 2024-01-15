@@ -16,10 +16,10 @@
       // === logo change
       if (ud_header.classList.contains("sticky")) {
         document.querySelector(".header-logo").src =
-          "assets/images/logo/dark-logo.png"
+          "assets/images/logo/dark-logo.png";
       } else {
         document.querySelector(".header-logo").src =
-          "assets/images/logo/logo-white.png"
+          "assets/images/logo/logo-white.png";
       }
     }
 
@@ -27,12 +27,11 @@
       if (logo.length) {
         if (ud_header.classList.contains("sticky")) {
           document.querySelector(".header-logo").src =
-            "assets/images/logo/logo-white.png"
+            "assets/images/logo/logo-white.png";
         }
       }
     }
 
-    // show or hide the back-top-top button
     const backToTop = document.querySelector(".back-to-top");
     if (
       document.body.scrollTop > 50 ||
@@ -113,34 +112,34 @@
   /* ========  themeSwitcher start ========= */
 
   // themeSwitcher
-  const themeSwitcher = document.getElementById('themeSwitcher');
+  const themeSwitcher = document.getElementById("themeSwitcher");
 
   // Theme Vars
-  const userTheme = localStorage.getItem('theme');
-  const systemTheme = window.matchMedia('(prefers-color0scheme: dark)').matches;
+  const userTheme = localStorage.getItem("theme");
+  const systemTheme = window.matchMedia("(prefers-color0scheme: dark)").matches;
 
   // Initial Theme Check
   const themeCheck = () => {
-    if (userTheme === 'dark' || (!userTheme && systemTheme)) {
-      document.documentElement.classList.add('dark');
+    if (userTheme === "dark" || (!userTheme && systemTheme)) {
+      document.documentElement.classList.add("dark");
       return;
     }
   };
 
   // Manual Theme Switch
   const themeSwitch = () => {
-    if (document.documentElement.classList.contains('dark')) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
       return;
     }
 
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
   };
 
   // call theme switch on clicking buttons
-  themeSwitcher.addEventListener('click', () => {
+  themeSwitcher.addEventListener("click", () => {
     themeSwitch();
   });
 
