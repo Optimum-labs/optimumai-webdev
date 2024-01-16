@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/optimumai-webdev/static/css/main.1aca68f1.css",
+    "main.js": "/optimumai-webdev/static/js/main.0e7506a2.js",
+    "static/js/787.dd61b744.chunk.js": "/optimumai-webdev/static/js/787.dd61b744.chunk.js",
+    "static/media/about-image-01.jpg": "/optimumai-webdev/static/media/about-image-01.601da2f912cc61d8422c.jpg",
+    "static/media/about-image-02.jpg": "/optimumai-webdev/static/media/about-image-02.c9c5e44f8b340dcac649.jpg",
+    "static/media/logo-white.png": "/optimumai-webdev/static/media/logo-white.ec821056062caf8bc8a3.png",
+    "static/media/dark-logo.png": "/optimumai-webdev/static/media/dark-logo.4e7248d96c9b447cb816.png",
+    "index.html": "/optimumai-webdev/index.html",
+    "static/media/shape-1.svg": "/optimumai-webdev/static/media/shape-1.fa4ecb67caf000801a2b6a36b90d6d80.svg",
+    "main.1aca68f1.css.map": "/optimumai-webdev/static/css/main.1aca68f1.css.map",
+    "main.0e7506a2.js.map": "/optimumai-webdev/static/js/main.0e7506a2.js.map",
+    "787.dd61b744.chunk.js.map": "/optimumai-webdev/static/js/787.dd61b744.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1aca68f1.css",
+    "static/js/main.0e7506a2.js"
+  ]
+}
