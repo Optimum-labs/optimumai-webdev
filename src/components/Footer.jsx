@@ -25,8 +25,7 @@ function Footer() {
                 />
               </Link>
               <p className="mb-8 max-w-[270px] text-base text-gray-7">
-                We create digital experiences for brands and companies by using
-                technology.
+                OptimumAI Labs is a community of learners, thinkers, and interview preppers...
               </p>
               <div className="-mx-3 flex items-center">
                 <Link
@@ -129,7 +128,7 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Testimonial
+                    Our Team
                   </Link>
                 </li>
               </ul>
@@ -187,7 +186,7 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    LineIcons
+                    Skill Assessment
                   </Link>
                 </li>
                 <li>
@@ -195,7 +194,7 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Ecommerce HTML
+                    Interview Prep
                   </Link>
                 </li>
                 <li>
@@ -203,7 +202,7 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    TailAdmin
+                    Mindless Coding 
                   </Link>
                 </li>
                 <li>
@@ -211,7 +210,7 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    PlainAdmin
+                    Leaders in Tech
                   </Link>
                 </li>
               </ul>
@@ -263,22 +262,13 @@ function Footer() {
             <div className="w-full px-4 md:w-2/3 lg:w-1/2">
               <div className="my-1">
                 <div className="-mx-3 flex items-center justify-center md:justify-start">
-                  <Link
-                    to="#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
+                  <Link to="#" className="px-3 text-base text-gray-7 hover:text-white hover:underline">
                     Privacy policy
                   </Link>
-                  <Link
-                    to="#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
+                  <Link to="#" className="px-3 text-base text-gray-7 hover:text-white hover:underline">
                     Legal notice
                   </Link>
-                  <Link
-                    to="#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
+                  <Link to="#" className="px-3 text-base text-gray-7 hover:text-white hover:underline">
                     Terms of service
                   </Link>
                 </div>
@@ -287,11 +277,8 @@ function Footer() {
             <div className="w-full px-4 md:w-1/3 lg:w-1/2">
               <div className="my-1 flex justify-center md:justify-end">
                 <p className="text-base text-gray-7">
-                  Designed and Developed by 
-                  <Link
-                    to="https://github.com/Optimum-labs"
-                    className="text-gray-1 ml-1 hover:underline"
-                  >
+                  Designed and Developed by &nbsp;
+                  <Link to="https://github.com/Optimum-labs" className="text-gray-1 ml-1 hover:underline">
                     Optimum Labs
                   </Link>
                 </p>
@@ -300,7 +287,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
       <div>
         <span className="absolute left-0 top-0 z-[-1]">
           <img src={shape1} alt="" />
