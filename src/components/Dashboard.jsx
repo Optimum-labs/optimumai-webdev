@@ -7,7 +7,6 @@ const Dashboard = ({ name, email }) => {
     courses: [
       { id: 1, title: "Web Development", completed: true },
       { id: 2, title: "Machine Learning Basics", completed: false },
-      // Add more courses as needed
     ],
     certificates: [
       { id: 1, title: "Web Development Certificate", course: "Web Development" },
