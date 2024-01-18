@@ -1,10 +1,36 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/tailwind.css";
-import "../assets/css/animate.css";
-import "../assets/css/swiper-bundle.min.css";
-
 import logoWhite from "../assets/images/logo/logo-white.png";
+import darkLogo from "../assets/images/logo/dark-logo.png";
+
+window.onscroll = function () {
+  const ud_header = document.querySelector(".ud-header");
+  const sticky = ud_header.offsetTop;
+  const logo = document.querySelectorAll(".header-logo");
+
+  if (window.pageYOffset > sticky) {
+    ud_header.classList.add("sticky");
+  } else {
+    ud_header.classList.remove("sticky");
+  }
+
+  if (logo.length) {
+    if (ud_header.classList.contains("sticky")) {
+      logo.src = {darkLogo};
+    } else {
+      logo.src = {logoWhite};
+    }
+  }
+
+  if (document.documentElement.classList.contains("dark")) {
+    if (logo.length) {
+      if (ud_header.classList.contains("sticky")) {
+        logo.src = {logoWhite};
+      }
+    }
+  }  
+};
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,18 +40,11 @@ function Navbar() {
   };
 
   return (
-    <div
-      className={`ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent ${
-        isMenuOpen ? "open" : ""
-      }`}
-    >
+    <div className={`ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-primary ${isMenuOpen ? "open" : ""}`}>
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="w-60 max-w-full px-2">
-            <Link
-              to="/"
-              className="navbar-logo block w-full py-5"
-            >
+            <Link to="/" className="navbar-logo block w-full py-5">
               <img src={logoWhite} alt="logo" className="header-logo w-full" />
             </Link>
           </div>

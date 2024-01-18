@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Dashboard = ({ name, email }) => {
-  const [userData, setUserData] = useState({
+const Dashboard = ({ user}) => {
+  const [userData] = useState({
     credits: 100,
     courses: [
       { id: 1, title: "Web Development", completed: true },
@@ -32,8 +32,8 @@ const Dashboard = ({ name, email }) => {
     <div className="container mx-auto p-4">
       <div className="grid grid-cols- md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="dark:bg-gray-800 rounded-md p-8">
-          <h2 className="text-3xl text-center font-semibold mb-4">Welcome, {name}!</h2>
-          <p className="text-gray-600 dark:text-gray-400">Email: {email}</p>
+          <h2 className="text-3xl text-center font-semibold mb-4">Welcome, {user.email}!</h2>
+          <p className="text-gray-600 dark:text-gray-400">Email: {user.email}</p>
           <p className="text-gray-600 dark:text-gray-400">Credits: {userData.credits}</p>
         </div>
 
