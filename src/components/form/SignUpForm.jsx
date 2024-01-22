@@ -31,11 +31,17 @@ const SignUpForm = () => {
     setSubmitted(true);
   };
 
+  const user = {
+    name: name,
+    email: email
+  }
+
+
   return (
     <section className="bg-[#F4F7FF] py-14 lg:py-20 dark:bg-dark">
         {submitted ? (
           <div className="dashboard">            
-            <Dashboard name={name} email={email} />
+            <Dashboard user={user} />
           </div>
         ) : (
       <div className="container">        

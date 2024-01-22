@@ -1,8 +1,7 @@
 import React from "react";
 import aboutImage1 from "../assets/images/about/about-image-01.jpg";
 import aboutImage2 from "../assets/images/about/about-image-02.jpg";
-import { Link } from "react-router-dom";
-import Team from "../components/Team";
+// import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -45,12 +44,12 @@ const About = () => {
                     learning platforms.
                   </p>
 
-                  <Link
+                  {/* <Link
                     to="#"
                     className="inline-flex items-center justify-center rounded-md border border-primary bg-primary px-7 py-3 text-center text-base font-medium text-white hover:border-blue-dark hover:bg-blue-dark"
                   >
                     Learn More
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
 
@@ -93,8 +92,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      <Team />
     </>
   );
 };

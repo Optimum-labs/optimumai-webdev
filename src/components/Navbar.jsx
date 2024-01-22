@@ -1,39 +1,68 @@
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/tailwind.css";
 import logoWhite from "../assets/images/logo/logo-white.png";
 import darkLogo from "../assets/images/logo/dark-logo.png";
 
-window.onscroll = function () {
-  const ud_header = document.querySelector(".ud-header");
-  const sticky = ud_header.offsetTop;
-  const logo = document.querySelectorAll(".header-logo");
-
-  if (window.pageYOffset > sticky) {
-    ud_header.classList.add("sticky");
-  } else {
-    ud_header.classList.remove("sticky");
-  }
-
-  if (logo.length) {
-    if (ud_header.classList.contains("sticky")) {
-      logo.src = {darkLogo};
-    } else {
-      logo.src = {logoWhite};
-    }
-  }
-
-  if (document.documentElement.classList.contains("dark")) {
-    if (logo.length) {
-      if (ud_header.classList.contains("sticky")) {
-        logo.src = {logoWhite};
-      }
-    }
-  }  
-};
-
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const ud_header = document.querySelector(".ud-header");
+      const sticky = ud_header.offsetTop;
+      const logo = document.querySelector(".navbar-logo img");
+
+      if (window.pageYOffset > sticky) {
+        ud_header.classList.add("sticky");
+        if (logo) {
+          logo.src = darkLogo;
+        }
+      } else {
+        ud_header.classList.remove("sticky");
+        if (logo) {
+          logo.src = logoWhite;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toggleTheme = () => {
+    const logo = document.querySelector(".header-logo");
+    if (logo) {
+      logo.src = !isDarkMode ? darkLogo : logoWhite;
+    }
+  
+    // Toggle the theme
+    setIsDarkMode(!isDarkMode);
+  
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  };
+  
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", isDarkMode);
+
+    const logo = document.querySelector(".navbar-logo img");
+    if (logo) {
+      logo.src = isDarkMode ? logoWhite : darkLogo;
+    }
+
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  }, [isDarkMode]);
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    setIsDarkMode(storedTheme === "dark");
+  }, []);
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -116,62 +145,6 @@ function Navbar() {
                       Blog
                     </Link>
                   </li>
-                  <li class="submenu-item group relative">
-                    <Link
-                      to="#"
-                      className="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-8 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
-                    >
-                      Pages
-                      <svg
-                        class="ml-2 fill-current"
-                        width="16"
-                        height="20"
-                        viewBox="0 0 16 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
-                      </svg>
-                    </Link>
-                    <div class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
-                      <Link
-                        to="#"
-                        className="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                      >
-                        About Page
-                      </Link>
-                      <Link
-                        to="#"
-                        className="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                      >
-                        Pricing Page
-                      </Link>
-                      <Link
-                        to="#"
-                        className="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                      >
-                        Contact Page
-                      </Link>
-                      <Link
-                        to="#"
-                        className="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                      >
-                        Blog Grid Page
-                      </Link>
-                      <Link
-                        to="#"
-                        className="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                      >
-                        Blog Details Page
-                      </Link>
-                      <Link
-                        to="#"
-                        className="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                      >
-                        404 Page
-                      </Link>
-                    </div>
-                  </li>
                 </ul>
               </nav>
             </div>
@@ -187,6 +160,8 @@ function Navbar() {
                   name="themeSwitcher"
                   id="themeSwitcher"
                   className="sr-only"
+                  checked={isDarkMode}
+                  onChange={toggleTheme}
                 />
                 <span className="block text-white dark:hidden">
                   <svg

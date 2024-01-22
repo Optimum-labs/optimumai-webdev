@@ -279,7 +279,7 @@ function Footer() {
                 <p className="text-base text-gray-7">
                   Designed and Developed by &nbsp;
                   <Link to="https://github.com/Optimum-labs" className="text-gray-1 ml-1 hover:underline">
-                    Optimum Labs
+                    OptimumAI Labs
                   </Link>
                 </p>
               </div>

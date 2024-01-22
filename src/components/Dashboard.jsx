@@ -29,8 +29,8 @@ const Dashboard = ({ user}) => {
   }, []); // Run once on component mount
 
   return (
-    <div className="container mx-auto p-4">
-      <div className="grid grid-cols- md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="container mx-auto p-4 text-dark dark:text-white">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="dark:bg-gray-800 rounded-md p-8">
           <h2 className="text-3xl text-center font-semibold mb-4">Welcome, {user.email}!</h2>
           <p className="text-gray-600 dark:text-gray-400">Email: {user.email}</p>
@@ -98,13 +98,13 @@ const Dashboard = ({ user}) => {
         <div className="col-span-3 flex justify-end space-x-4">
           <Link
             to="/live-interview"
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition duration-300"
+            className="bg-blue-500 hover:bg-blue-600 py-2 px-4 rounded-md transition duration-300"
           >
             Schedule Live Interview
           </Link>
           <Link
             to="/purchase-courses"
-            className="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-md transition duration-300"
+            className="bg-yellow-500 hover:bg-yellow-600 py-2 px-4 rounded-md transition duration-300"
           >
             Purchase Courses
           </Link>

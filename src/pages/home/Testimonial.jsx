@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Swiper from 'swiper'; 
+// import Swiper from 'swiper'; 
 import '../../assets/css/swiper-bundle.min.css';
 import { Link } from "react-router-dom";
 import iconStar from "../../assets/images/testimonials/icon-star.svg"; 
