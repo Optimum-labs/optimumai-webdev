@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../assets/css/tailwind.css";
 import logoWhite from "../assets/images/logo/logo-white.png";
 import darkLogo from "../assets/images/logo/dark-logo.png";
+import AuthButton from "./AuthButton";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -204,18 +205,7 @@ function Navbar() {
                 </span>
               </label>
               <div className="hidden sm:flex">
-                <Link
-                  to="/sign-in-form"
-                  className="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  to="/sign-up-form"
-                  className="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-                >
-                  Sign Up
-                </Link>
+                <AuthButton />
               </div>
             </div>
           </div>

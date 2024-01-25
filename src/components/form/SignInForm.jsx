@@ -3,13 +3,14 @@ import { createClient } from "@supabase/supabase-js";
 import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import Dashboard from "../Dashboard";
+import "../Authication.css";
 
-const supabase = createClient(
-  "https://qbquoiialdejpzqhicef.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFicXVvaWlhbGRlanB6cWhpY2VmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDU1NTY5MzEsImV4cCI6MjAyMTEzMjkzMX0.6tUTZLWMRfts_YuZTpkIM9e3_hC9Td-aCmJ0q0RiYEw"
-);
+const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
+const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
 
-export default function SignUpForm() {
+const supabase = createClient( supabaseUrl, supabaseKey );
+
+export default function SignInForm() {
   const [session, setSession] = useState(null);
 
   useEffect(() => {
@@ -38,7 +39,7 @@ export default function SignUpForm() {
 
   if (!session) {
     return (
-      <div className="container">
+      <div className="form-container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
             <div className="wow fadeInUp relative mx-auto max-w-[525px] overflow-hidden rounded-lg bg-white dark:bg-dark-2 py-14 px-8 sm:px-12 md:px-[60px]">

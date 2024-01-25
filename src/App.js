@@ -12,8 +12,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SignInForm from './components/form/SignInForm';
 import SignUpForm from './components/form/SignUpForm';
-import Pricing from './pages/home/Pricing'
-import Team from './components/Team'
+import Pricing from './pages/home/Pricing';
+import Team from './components/Team';
+// import Dashboard from './components/Dashboard';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/sign-up-form" element={<SignUpForm />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<SignInForm />} />
           <Route path="/optimumai-webdev" element={<Home />} />
         </Routes>
         <Footer />        
