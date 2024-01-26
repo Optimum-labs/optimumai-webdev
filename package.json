@@ -1,7 +1,7 @@
 {
   "name": "optimumai-webdev",
   "version": "0.1.0",
-  "homepage": "https://Optimum-labs.github.io/optimumai-webdev",
+//  "homepage": "https://Optimum-labs.github.io/optimumai-webdev",
   "private": true,
   "dependencies": {
     "@supabase/auth-ui-react": "^0.4.7",
