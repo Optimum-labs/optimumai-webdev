@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/Products.css";
+// import "../assets/css/Products.css";
 function Products() {
   return (
     <div className="products">

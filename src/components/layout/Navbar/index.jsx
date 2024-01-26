@@ -1,9 +1,9 @@
 import React, { useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-import "../assets/css/tailwind.css";
-import logoWhite from "../assets/images/logo/logo-white.png";
-import darkLogo from "../assets/images/logo/dark-logo.png";
-import AuthButton from "./AuthButton";
+import "../../../assets/css/tailwind.css";
+import logoWhite from "../../../assets/images/logo/logo-white.png";
+import darkLogo from "../../../assets/images/logo/dark-logo.png";
+import AuthButton from "../../AuthButton";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

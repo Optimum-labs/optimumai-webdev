@@ -1,7 +1,5 @@
-import React from "react";
-import aboutImage1 from "../assets/images/about/about-image-01.jpg";
-import aboutImage2 from "../assets/images/about/about-image-02.jpg";
-// import { Link } from "react-router-dom";
+import aboutImage1 from "../../assets/images/about/about-image-01.jpg";
+import aboutImage2 from "../../assets/images/about/about-image-02.jpg";
 
 const About = () => {
   return (

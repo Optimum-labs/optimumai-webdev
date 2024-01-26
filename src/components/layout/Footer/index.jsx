@@ -1,7 +1,7 @@
-import logoWhite from "../assets/images/logo/logo-white.png"
-import shape1 from "../assets/images/footer/shape-1.svg"
-import blogFooter1 from "../assets/images/blog/blog-footer-01.jpg"
-import blogFooter2 from "../assets/images/blog/blog-footer-02.jpg"
+import logoWhite from "../../../assets/images/logo/logo-white.png"
+import shape1 from "../../../assets/images/footer/shape-1.svg"
+import blogFooter1 from "../../../assets/images/blog/blog-footer-01.jpg"
+import blogFooter2 from "../../../assets/images/blog/blog-footer-02.jpg"
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -101,7 +101,7 @@ function Footer() {
               <ul>
                 <li>
                   <Link
-                    to="#"
+                    to="/"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Home
@@ -117,7 +117,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/about"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     About
@@ -125,7 +125,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/team"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Our Team
