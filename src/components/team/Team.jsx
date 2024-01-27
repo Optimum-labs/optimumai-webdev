@@ -1,6 +1,6 @@
 import React from "react";
 import TeamMember from "./TeamMember";
-import teamMembers from "../data/teamMembers";
+import teamMembers from "../../data/teamMembers";
 
 const Team = () => {
   

@@ -8,9 +8,9 @@ import "../Authication.css";
 const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
 const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
 
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = createClient( supabaseUrl, supabaseKey );
 
-export default function SignUpForm() {
+export default function Login() {
   const [session, setSession] = useState(null);
 
   useEffect(() => {
@@ -37,24 +37,6 @@ export default function SignUpForm() {
     };
   }, []);
 
-  const handleSignUp = async (email, password) => {
-    try {
-      const { user, error } = await supabase.auth.signUp({
-        email,
-        password,
-      });
-
-      if (error) {
-        throw error;
-      }
-
-      // You can do something after successful sign up, like redirecting or displaying a success message
-      console.log("Sign up successful:", user);
-    } catch (error) {
-      console.error("Error signing up:", error.message);
-    }
-  };
-
   if (!session) {
     return (
       <div className="form-container">
@@ -64,7 +46,6 @@ export default function SignUpForm() {
               <Auth
                 supabaseClient={supabase}
                 appearance={{ theme: ThemeSupa }}
-                signUp={handleSignUp} // Pass the signUp function to the Auth component
               />
             </div>
           </div>
@@ -73,10 +54,10 @@ export default function SignUpForm() {
     );
   } else {
     return (
-      <section className="bg-[#F4F7FF] py-14 lg:py-20 dark:bg-dark">
-        <div className="dashboard">
-          <Dashboard user={session.user} />
-        </div>
+      <section className="bg-[#F4F7FF] py-14 lg:py-20 dark:bg-dark">        
+          <div className="dashboard">
+            <Dashboard user={session.user} />
+          </div>
       </section>
     );
   }

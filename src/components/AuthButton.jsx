@@ -39,23 +39,17 @@ export default function AuthButton() {
       {!session ? (
         <>
           <Link
-            to="/sign-in-form"
-            className="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
+            to="/login"
+            className="signUpBtn rounded-md bg-white ml-2 bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
           >
-            Sign In
-          </Link>
-          <Link
-            to="/sign-up-form"
-            className="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-          >
-            Sign Up
+            Login
           </Link>
         </>
       ) : (
         <div>
           <Link
             to="/dashboard"
-            className="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
+            className="loginBtn px-[22px] ml-2 py-2 text-base font-medium text-white hover:opacity-70"
           >
             Dashboard
           </Link>
