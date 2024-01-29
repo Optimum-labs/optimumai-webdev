@@ -29,6 +29,7 @@ export default function Login() {
     const authListener = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session);
     });
+       
 
     fetchSession();
 
@@ -36,6 +37,7 @@ export default function Login() {
       authListener.data.subscription.unsubscribe();
     };
   }, []);
+  
 
   if (!session) {
     return (
