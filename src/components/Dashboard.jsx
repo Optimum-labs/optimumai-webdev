@@ -1,7 +1,73 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import styled from 'styled-components';
 
-const Dashboard = ({ user}) => {
+const DashboardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+`;
+
+const WelcomeCard = styled.div`
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+`;
+
+const UserProfile = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+`;
+
+const InfoCard = styled.div`
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 8px;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+`;
+
+const Dashboard = ({ user }) => {
   const [userData] = useState({
     credits: 100,
     courses: [
@@ -10,15 +76,12 @@ const Dashboard = ({ user}) => {
     ],
     certificates: [
       { id: 1, title: "Web Development Certificate", course: "Web Development" },
-      // Add more certificates as needed
     ],
     liveInterviews: [
       { id: 1, date: "2024-03-15", topic: "React.js Fundamentals" },
-      // Add more live interviews as needed
     ],
     payments: [
-      { id: 1, date: "2024-03-10", amount: 50, description: "Web Development Course" },
-      // Add more payment entries as needed
+      { id: 1, date: "2024-01-10", amount: 50, description: "Web Development Course" },
     ],
   });
 
@@ -29,88 +92,79 @@ const Dashboard = ({ user}) => {
   }, []); // Run once on component mount
 
   return (
-    <div className="container mx-auto p-4 text-dark dark:text-white">
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="dark:bg-gray-800 rounded-md p-8">
-          <h2 className="text-3xl text-center font-semibold mb-4">Welcome, {user.email}!</h2>
-          <p className="text-gray-600 dark:text-gray-400">Email: {user.email}</p>
-          <p className="text-gray-600 dark:text-gray-400">Credits: {userData.credits}</p>
-        </div>
+    <DashboardContainer className="text-dark dark:text-white"
+    >
+      <UserProfile>
+        <img src="https://github.com/ajay-dhangar.png" alt="Profile" />
+        <h2>Welcome, {user.email}!</h2>
+      </UserProfile>
 
-        <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="dark:bg-gray-800 rounded-md p-8">
-            <h3 className="text-xl font-semibold mb-4">Your Courses</h3>
-            <ul>
-              {userData.courses.map((course) => (
-                <li key={course.id} className="mb-2">
-                  {course.completed ? (
-                    <span className="text-green-500">{course.title}</span>
-                  ) : (
-                    <span className="text-blue-500">{course.title}</span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
+      <WelcomeCard>
+        <p>Email: {user.email}</p>
+        <p>Credits: {userData.credits}</p>
+      </WelcomeCard>
 
-          <div className="dark:bg-gray-800 rounded-md p-8">
-            <h3 className="text-xl font-semibold mb-4">Your Certificates</h3>
-            <ul>
-              {userData.certificates.map((certificate) => (
-                <li key={certificate.id} className="mb-2">
-                  <span className="text-purple-500">{certificate.title}</span>
-                  <p className="text-gray-600 dark:text-gray-400">Course: {certificate.course}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+      <InfoCard>
+        <h3>Your Courses</h3>
+        <ul>
+          {userData.courses.map((course) => (
+            <li key={course.id}>
+              {course.completed ? (
+                <span className="text-green-500">{course.title}</span>
+              ) : (
+                <span className="text-blue-500">{course.title}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </InfoCard>
 
-        <div className="col-span-3">
-          <div className="dark:bg-gray-800 rounded-md p-8">
-            <h3 className="text-xl font-semibold mb-4">Upcoming Live Interviews</h3>
-            <ul>
-              {userData.liveInterviews.map((interview) => (
-                <li key={interview.id} className="mb-2">
-                  <span className="text-yellow-500">{interview.date}</span>
-                  <p className="text-gray-600 dark:text-gray-400">Topic: {interview.topic}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+      <InfoCard>
+        <h3>Your Certificates</h3>
+        <ul>
+          {userData.certificates.map((certificate) => (
+            <li key={certificate.id}>
+              <span className="text-purple-500">{certificate.title}</span>
+              <p>Course: {certificate.course}</p>
+            </li>
+          ))}
+        </ul>
+      </InfoCard>
 
-        <div className="col-span-3">
-          <div className="dark:bg-gray-800 rounded-md p-8">
-            <h3 className="text-xl font-semibold mb-4">Payment History</h3>
-            <ul>
-              {userData.payments.map((payment) => (
-                <li key={payment.id} className="mb-2">
-                  <span className="text-blue-500">{payment.date}</span>
-                  <p className="text-gray-600 dark:text-gray-400">Amount: ${payment.amount}</p>
-                  <p className="text-gray-600 dark:text-gray-400">Description: {payment.description}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+      <InfoCard>
+        <h3>Upcoming Live Interviews</h3>
+        <ul>
+          {userData.liveInterviews.map((interview) => (
+            <li key={interview.id}>
+              <span className="text-yellow-500">{interview.date}</span>
+              <p>Topic: {interview.topic}</p>
+            </li>
+          ))}
+        </ul>
+      </InfoCard>
 
-        <div className="col-span-3 flex justify-end space-x-4">
-          <Link
-            to="/live-interview"
-            className="bg-blue-500 hover:bg-blue-600 py-2 px-4 rounded-md transition duration-300"
-          >
-            Schedule Live Interview
-          </Link>
-          <Link
-            to="/purchase-courses"
-            className="bg-yellow-500 hover:bg-yellow-600 py-2 px-4 rounded-md transition duration-300"
-          >
-            Purchase Courses
-          </Link>
-        </div>
+      <InfoCard>
+        <h3>Payment History</h3>
+        <ul>
+          {userData.payments.map((payment) => (
+            <li key={payment.id}>
+              <span className="text-blue-500">{payment.date}</span>
+              <p>Amount: ${payment.amount}</p>
+              <p>Description: {payment.description}</p>
+            </li>
+          ))}
+        </ul>
+      </InfoCard>
+
+      <div className="flex justify-end space-x-4">
+        <Link to="/live-interview" className="bg-blue-500 hover:bg-blue-600 py-2 px-4 rounded-md transition duration-300">
+          Schedule Live Interview
+        </Link>
+        <Link to="/purchase-courses" className="bg-yellow-500 hover:bg-yellow-600 py-2 px-4 rounded-md transition duration-300">
+          Purchase Courses
+        </Link>
       </div>
-    </div>
+    </DashboardContainer>
   );
 };
 
