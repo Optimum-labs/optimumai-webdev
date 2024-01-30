@@ -11,6 +11,7 @@ import Footer from './components/layout/Footer';
 import Login  from './components/form/Login';
 import Pricing from './pages/Pricing';
 import Team from './components/team/Team';
+import Scroll from './components/common/Ṣcroll';
 
 function App() {
   return (
@@ -24,13 +25,14 @@ function App() {
           <Route path="/mock-interview-bot" element={<MockInterviewBot />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
-          {/* <Route path="/sign-in-form" element={<SignInForm />} /> */}
-          {/* <Route path="/sign-up-form" element={<SignUpForm />} /> */}
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Login />} />
           <Route path="/optimumai-webdev" element={<Home />} />
         </Routes>
+        <button className="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark" style={{ display: 'inline-block' }}>
+        <Scroll />
+      </button>
         <Footer />        
       </div>
     </Router>

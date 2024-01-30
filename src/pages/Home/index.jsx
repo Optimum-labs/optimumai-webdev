@@ -10,7 +10,7 @@ function Home() {
       <Hero />
       <Features />
       <About />
-      <Pricing />
+      <Pricing />       
     </div>
   );
 }
