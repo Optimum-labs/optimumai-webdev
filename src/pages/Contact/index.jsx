@@ -1,4 +1,3 @@
-
 function ContactUs() {
   return (
     <div className="bg-white dark:bg-dark-2 text-dark dark:text-white py-5 pt-20 px-8 sm:px-12 mt-16">
@@ -45,7 +44,7 @@ function ContactUs() {
             className="w-full px-4 py-3 text-base text-white transition duration-300 ease-in-out border rounded-md cursor-pointer border-primary bg-primary hover:bg-blue-dark"
           />
         </div>
-      </form>
+      </form>      
     </div>
   );
 }
