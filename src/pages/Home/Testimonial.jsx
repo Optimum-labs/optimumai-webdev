@@ -60,13 +60,13 @@ const Testimonial = () => {
                     />
                   </div>
 
-                  <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                  <p className="mb-6 text-base text-body-color dark:text-dark-6">
                     “Our members are so impressed. It's intuitive. It's clean.
                     It's distraction free. If you're building a community.’’
                   </p>
 
-                  <Link to="#" class="flex items-center gap-4">
-                    <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
+                  <Link to="#" className="flex items-center gap-4">
+                    <div className="h-[50px] w-[50px] overflow-hidden rounded-full">
                       <img
                         src={author01}
                         alt="author"
@@ -109,17 +109,17 @@ const Testimonial = () => {
                     />
                   </div>
 
-                  <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                  <p className="mb-6 text-base text-body-color dark:text-dark-6">
                     “Our members are so impressed. It's intuitive. It's clean.
                     It's distraction free. If you're building a community.’’
                   </p>
 
-                  <Link to="#" class="flex items-center gap-4">
+                  <Link to="#" className="flex items-center gap-4">
                     <div className="h-[50px] w-[50px] overflow-hidden rounded-full">
                       <img
                         src={author02}
                         alt="author"
-                        class="h-[50px] w-[50px] overflow-hidden rounded-full"
+                        className="h-[50px] w-[50px] overflow-hidden rounded-full"
                       />
                     </div>
 
@@ -265,7 +265,7 @@ const Testimonial = () => {
                     It's distraction free. If you're building a community.’’
                   </p>
 
-                  <Link to="#" class="flex items-center gap-4">
+                  <Link to="#" className="flex items-center gap-4">
                     <div className="h-[50px] w-[50px] overflow-hidden rounded-full">
                       <img
                         src={author02}
@@ -311,12 +311,12 @@ const Testimonial = () => {
                     />
                   </div>
 
-                  <p class="mb-6 text-base text-body-color dark:text-dark-6">
+                  <p className="mb-6 text-base text-body-color dark:text-dark-6">
                     “Our members are so impressed. It's intuitive. It's clean.
                     It's distraction free. If you're building a community.’’
                   </p>
 
-                  <Link to="#" class="flex items-center gap-4">
+                  <Link to="#" className="flex items-center gap-4">
                     <div className="h-[50px] w-[50px] overflow-hidden rounded-full">
                       <img
                         src={author03}
