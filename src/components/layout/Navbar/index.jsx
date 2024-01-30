@@ -1,14 +1,17 @@
 import React, { useState, useEffect} from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 import "../../../assets/css/tailwind.css";
 import logoWhite from "../../../assets/images/logo/logo-white.png";
 import darkLogo from "../../../assets/images/logo/dark-logo.png";
 import AuthButton from "../../AuthButton";
+import NAVBAR_MENU from "../../../data/navbar";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  
+  const navigate = useNavigate();
+
   useEffect(() => {
     const handleScroll = () => {
       const ud_header = document.querySelector(".ud-header");
@@ -69,6 +72,12 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
+  const handleMenuItemClick = (link) => {
+    setIsMenuOpen(false);
+    navigate(link)
+  };
+
   return (
     <div className={`ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-primary ${isMenuOpen ? "open" : ""}`}>
       <div className="container">
@@ -93,59 +102,26 @@ function Navbar() {
               </button>
               <nav
                 id="navbarCollapse"
-                className={`absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6 ${
-                  isMenuOpen ? "open" : ""
+                className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6 ${
+                  isMenuOpen ? "open" : "hidden"
                 }`}
               >
                 <ul className="blcok lg:flex 2xl:ml-20">
-                  <li>
-                    <Link
-                      to="/"
-                      className="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                  {NAVBAR_MENU.map((menuItem, index) => (
+                    <li
+                      key={index}
+                      onClick={() => handleMenuItemClick(menuItem.link)}
+                      className="cursor-pointer"
                     >
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/about"
-                      className="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
-                    >
-                      About
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/pricing"
-                      className="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
-                    >
-                      Pricing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/team"
-                      className="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
-                    >
-                      Team
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/contact"
-                      className="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
-                    >
-                      Contact
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="#"
-                      className="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
-                    >
-                      Blog
-                    </Link>
-                  </li>
+                      <a
+                        // to="/"
+                        className="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      >
+                        {menuItem.label}
+                      </a>
+                    </li>
+                  ))}
+
                 </ul>
               </nav>
             </div>
