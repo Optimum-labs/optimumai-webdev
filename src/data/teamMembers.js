@@ -31,6 +31,16 @@ const teamMembers = [
       <TwitterIcon url="/" />,
     ],
   },
+  {
+    name: "Anand Shende",
+    role: "Full Stack AI Engg",
+    image: "https://avatars.githubusercontent.com/u/24247490",
+    socialIcons: [
+      <GitHubIcon url="https://github.com/anandshende" />,
+      <LinkedInIcon url="https://www.linkedin.com/in/anandshende" />,
+      <TwitterIcon url="/" />,
+    ],
+  },
 ];
 
 

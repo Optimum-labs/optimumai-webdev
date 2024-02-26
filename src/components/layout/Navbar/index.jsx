@@ -180,7 +180,7 @@ function Navbar() {
                   </svg>
                 </span>
               </label>
-              <div className="hidden sm:flex">
+              <div className="sm:flex">
                 <AuthButton />
               </div>
             </div>
