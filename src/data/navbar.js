@@ -20,8 +20,8 @@ const NAVBAR_MENU = [
     'link': '/contact'
   },
   {
-    'label': 'Blog',
-    'link': '#'
+    'label': 'Community',
+    'link': '/community'
   },
 ];
 

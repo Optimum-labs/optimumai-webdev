@@ -12,7 +12,7 @@ const teamMembers = [
     ],
   },
   {
-    name: "basanthsk",
+    name: "Basant",
     role: "Development",
     image: "https://avatars.githubusercontent.com/u/13544381?v=4",
     socialIcons: [
@@ -23,7 +23,7 @@ const teamMembers = [
   },
   {
     name: "Ajay Dhangar",
-    role: "Web Devloper",
+    role: "Software Engineer",
     image: "https://github.com/ajay-dhangar.png",
     socialIcons: [
       <GitHubIcon url="https://github.com/ajay-dhangar" />,
