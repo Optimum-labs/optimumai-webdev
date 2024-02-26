@@ -12,6 +12,7 @@ import Login  from './components/form/Login';
 import Pricing from './pages/Pricing';
 import Team from './components/team/Team';
 import Scroll from './components/common/Ṣcroll';
+import Community from './pages/Community';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Login />} />
           <Route path="/optimumai-webdev" element={<Home />} />
+          <Route path="/community" element={<Community />} />
         </Routes>
         <button className="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark" style={{ display: 'inline-block' }}>
         <Scroll />
