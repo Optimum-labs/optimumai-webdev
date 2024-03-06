@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const googleLogo = 'https://via.placeholder.com/150'; 
 const metaLogo = 'https://via.placeholder.com/150';
@@ -32,13 +32,13 @@ const Container = styled.div`
   }
 `;
 
-const Title = styled.h3`
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #4a5568;
-  padding-left: 32px;
-`;
+// const Title = styled.h3`
+//   font-size: 1.75rem;
+//   font-weight: 600;
+//   margin-bottom: 1rem;
+//   color: #4a5568;
+//   padding-left: 32px;
+// `;
 
 const Grid = styled.div`
   display: flex; /* Use flexbox for horizontal layout */
@@ -63,9 +63,9 @@ const PartnerCard = styled.div`
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 `;
 
-const PartnerLogo = styled.img`
-  height: 40px; /* Set the height of the logos */
-`;
+// const PartnerLogo = styled.img`
+//   height: 40px; /* Set the height of the logos */
+// `;
 
 const PartnerName = styled.p`
   margin-left: 0.5rem;
@@ -97,7 +97,7 @@ const CompaniesAndUniversitiesSection = () => {
         <Grid className='text-body-color dark:text-dark-6'>
           {companies.map((company, index) => (
             <PartnerCard key={index}>
-              <PartnerLogo src={company.logo} alt={company.name} />
+              {/* <PartnerLogo src={company.logo} alt={company.name} /> */}
               <PartnerName>{company.name}</PartnerName>
             </PartnerCard>
           ))}

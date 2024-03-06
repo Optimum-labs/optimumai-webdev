@@ -10,9 +10,11 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Login  from './components/form/Login';
 import Pricing from './pages/Pricing';
-import Team from './components/team/Team';
+// import Team from './components/team/Team';
 import Scroll from './components/common/Ṣcroll';
 import Community from './pages/Community';
+import AIForHealthcareAccessibility from './pages/Community/components/challenges/AIForHealthcareAccessibility';
+import AIForClimateAction from './pages/Community/components/challenges/AIForClimateAction';
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/about" element={<About />} />
-          <Route path="/team" element={<Team />} />
+          {/* <Route path="/team" element={<Team />} /> */}
           <Route path="/products" element={<Products />} />
           <Route path="/mock-interview-bot" element={<MockInterviewBot />} />
           <Route path="/contact" element={<Contact />} />
@@ -31,6 +33,8 @@ function App() {
           <Route path="/dashboard" element={<Login />} />
           <Route path="/optimumai-webdev" element={<Home />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/ai-for-healthcare-accessibility" element={<AIForHealthcareAccessibility />} />
+          <Route path="/ai-for-climate-action" element={<AIForClimateAction />} />
         </Routes>
         <button className="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark" style={{ display: 'inline-block' }}>
         <Scroll />

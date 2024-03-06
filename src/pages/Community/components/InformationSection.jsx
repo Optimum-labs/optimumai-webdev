@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import image from "../img/img-2.png";
 
 const Section = styled.section`
   padding: auto;
@@ -56,7 +57,6 @@ const ImageContainer = styled.div`
   @media (min-width: 768px) {
     width: 40%;
     margin-top: 12px;
-    
   }
 `;
 
@@ -64,7 +64,7 @@ const Image = styled.img`
   width: 100%;
   border-radius: 0.5rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  
+
   @media (min-width: 768px) {
     margin-top: 0;
   }
@@ -81,29 +81,37 @@ const Paragraph = styled.p`
 const InformationSection = () => {
   return (
     <Section>
-      <Title className='text-center text-dark dark:text-white'>Information Section</Title>
-      <Container>        
-        <ContentContainer className='text-body-color dark:text-dark-6'>
+      <Title className="text-center text-dark dark:text-white">
+        Information Of OptimumAI Labs
+      </Title>
+      <Container>
+        <ContentContainer className="text-body-color dark:text-dark-6">
           <TextContent>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor nec justo
-              consectetur, ut cursus nisi rutrum. Aliquam nec lectus nec velit fermentum hendrerit.
-              Quisque at ullamcorper velit. Phasellus convallis leo nec odio sagittis, at scelerisque nisl
-              faucibus. Aenean eleifend pharetra ligula, ac sagittis odio rutrum eget.
+              OptimumAI Labs is at the forefront of human development,
+              leveraging the power of Artificial Intelligence (AI) to create
+              innovative solutions. We specialize in building collaborative
+              platforms that seamlessly integrate AI, empowering individuals and
+              organizations to achieve their full potential. Our commitment lies
+              in providing cutting-edge solutions that foster continuous
+              learning, collaboration, and growth.
             </Paragraph>
             <Paragraph>
-              Vivamus ac purus in quam ullamcorper dignissim. Cras porttitor, neque quis molestie
-              consectetur, dolor dolor vestibulum lacus, ut fringilla turpis sapien id ligula. Donec nec
-              diam a nisl lacinia lobortis vel nec libero.
+              Our flagship products, the Interview Prep Chatbot and
+              CollaborateForge, are prime examples of how AI can revolutionize
+              development. The Interview Prep Chatbot offers a personalized
+              learning experience, providing users with tailored insights, goal
+              recommendations, and skill-building modules to excel in
+              interviews.
             </Paragraph>
           </TextContent>
           <ImageContainer>
-            <Image src="https://via.placeholder.com/300" alt="Placeholder" />
+            <Image src={image} alt="Placeholder" />
           </ImageContainer>
         </ContentContainer>
       </Container>
     </Section>
   );
-}
+};
 
 export default InformationSection;
