@@ -38,17 +38,17 @@ function Navbar() {
     };
   }, []);
 
-  const toggleTheme = () => {
-    const logo = document.querySelector(".header-logo");
-    if (logo) {
-      logo.src = !isDarkMode ? darkLogo : logoWhite;
-    }
+  // const toggleTheme = () => {
+  //   const logo = document.querySelector(".header-logo");
+  //   if (logo) {
+  //     logo.src = !isDarkMode ? darkLogo : logoWhite;
+  //   }
   
-    // Toggle the theme
-    setIsDarkMode(!isDarkMode);
+  //   // Toggle the theme
+  //   setIsDarkMode(!isDarkMode);
   
-    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-  };
+  //   localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  // };
   
 
   useEffect(() => {
@@ -126,7 +126,7 @@ function Navbar() {
               </nav>
             </div>
             <div className="flex items-center justify-end pr-16 lg:pr-0">
-              <label
+              {/* <label
                 htmlFor="themeSwitcher"
                 className="inline-flex cursor-pointer items-center"
                 aria-label="themeSwitcher"
@@ -179,7 +179,7 @@ function Navbar() {
                     </defs>
                   </svg>
                 </span>
-              </label>
+              </label> */}
               <div className="sm:flex">
                 <AuthButton />
               </div>

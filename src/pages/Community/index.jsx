@@ -1,5 +1,4 @@
 import React from 'react';
-import './style.css'
 import HeaderSection from './components/HeaderSection';
 import CounterSection from './components/CounterSection';
 import CompaniesAndUniversitiesSection from './components/CompaniesAndUniversitiesSection';

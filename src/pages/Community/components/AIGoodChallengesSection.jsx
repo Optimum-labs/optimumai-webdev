@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import {FaArrowAltCircleLeft, FaArrowAltCircleRight} from 'react-icons/fa';
+import React from "react";
+import styled from "styled-components";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+
+import image1 from "../img/free-mock.png";
+import image2 from "../img/mock.png";
+import { Link } from "react-router-dom";
 
 const Section = styled.section`
   padding: 48px 0;
@@ -12,7 +16,7 @@ const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
-  padding-right: 16px;  
+  padding-right: 16px;
   // overflow: hidden;
 
   @media (min-width: 768px) {
@@ -49,13 +53,14 @@ const Card = styled.div`
   margin: 2rem;
   scroll-snap-align: start;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0);    
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0);
     transform: translateY(-2px);
   }
 `;
@@ -79,6 +84,7 @@ const ProjectTitle = styled.h3`
 const Description = styled.p`
   font-size: 1rem;
   max-width: 300px;
+  text-align: justify;
 `;
 
 const NavigationButton = styled.button`
@@ -101,68 +107,66 @@ const NavigationButton = styled.button`
     color: #2d3748;
   }
 
-  ${({ direction }) => direction === 'left' && 'left: 1rem;'}
-  ${({ direction }) => direction === 'right' && 'right: 1rem;'}
-`;
-
-const ArrowIcon = styled.i`
-  font-size: 1.5rem;
+  ${({ direction }) => direction === "left" && "left: 1rem;"}
+  ${({ direction }) => direction === "right" && "right: 1rem;"}
 `;
 
 const AIGoodChallengesSection = () => {
-  const [scrollX, setScrollX] = useState(0);
-
   const projects = [
     {
       id: 1,
-      title: 'Project 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum.',
-      imageUrl: 'https://via.placeholder.com/300',
+      title: "AI for Climate Action",
+      description:
+        "AI for Climate Action is a global innovation challenge to identify and develop AI solutions to address climate change. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing environmental proble",
+      imageUrl: image1,
+      link: "/ai-for-climate-action",
     },
     {
       id: 2,
-      title: 'Project 2',
-      description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      imageUrl: 'https://via.placeholder.com/300',
+      title: "AI for Healthcare Accessibility",
+      description:
+        "AI for Healthcare Accessibility is a global innovation challenge to identify and develop AI solutions to address healthcare accessibility. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing healthcare accessibility problems.",
+      imageUrl: image2,
+      link: "/ai-for-healthcare-accessibility",
     },
-    {
-      id: 3,
-      title: 'Project 3',
-      description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-      imageUrl: 'https://via.placeholder.com/300',
-    },
-    {
-      id: 4,
-      title: 'Project 4',
-      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
-      imageUrl: 'https://via.placeholder.com/300',
-    },
-    {
-      id: 5,
-      title: 'Project 5',
-      description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
-      imageUrl: 'https://via.placeholder.com/300',
-    },
-    {
-      id: 6,
-      title: 'Project 6',
-      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
-      imageUrl: 'https://via.placeholder.com/300',
-    },
+    // {
+    //   id: 3,
+    //   title: 'Project 3',
+    //   description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+    //   imageUrl: 'https://via.placeholder.com/300',
+    // },
+    // {
+    //   id: 4,
+    //   title: 'Project 4',
+    //   description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
+    //   imageUrl: 'https://via.placeholder.com/300',
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Project 5',
+    //   description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+    //   imageUrl: 'https://via.placeholder.com/300',
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Project 6',
+    //   description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
+    //   imageUrl: 'https://via.placeholder.com/300',
+    // },
   ];
 
   const handleScroll = (direction) => {
-    const container = document.getElementById('card-container');
+    const container = document.getElementById("card-container");
     if (container) {
-      if (direction === 'left') {
+      if (direction === "left") {
         container.scrollBy({
           left: -container.offsetWidth,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
-      } else if (direction === 'right') {
+      } else if (direction === "right") {
         container.scrollBy({
           left: container.offsetWidth,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
       }
     }
@@ -171,27 +175,34 @@ const AIGoodChallengesSection = () => {
   return (
     <Section>
       <Container>
-        <Title className='text-center text-dark dark:text-white'>AI for Good Challenges</Title>
-        <Grid id="card-container" className='text-body-color dark:text-dark-6'>
-          {projects.map(project => (
+        <Title className="text-center text-dark dark:text-white">
+          AI for Good Challenges
+        </Title>
+        <Grid id="card-container" className="text-body-color dark:text-dark-6">
+          {projects.map((project) => (
             <Card key={project.id}>
-              <Image src={project.imageUrl} alt={project.title} />
-              <Content>
-                <ProjectTitle>{project.title}</ProjectTitle>
-                <Description>{project.description}</Description>
-              </Content>
+              <Link to={project.link}>
+                <Image src={project.imageUrl} alt={project.title} />
+                <Content>
+                  <ProjectTitle>{project.title}</ProjectTitle>
+                  <Description>{project.description}</Description>
+                </Content>
+              </Link>
             </Card>
           ))}
         </Grid>
-        <NavigationButton direction="left" onClick={() => handleScroll('left')}>
+        <NavigationButton direction="left" onClick={() => handleScroll("left")}>
           <FaArrowAltCircleLeft className="fas fa-chevron-left" />
         </NavigationButton>
-        <NavigationButton direction="right" onClick={() => handleScroll('right')}>
+        <NavigationButton
+          direction="right"
+          onClick={() => handleScroll("right")}
+        >
           <FaArrowAltCircleRight className="fas fa-chevron-right" />
         </NavigationButton>
       </Container>
     </Section>
   );
-}
+};
 
 export default AIGoodChallengesSection;
