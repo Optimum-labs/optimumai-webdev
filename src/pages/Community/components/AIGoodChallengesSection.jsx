@@ -79,6 +79,7 @@ const ProjectTitle = styled.h3`
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  text-align: center;
 `;
 
 const Description = styled.p`
