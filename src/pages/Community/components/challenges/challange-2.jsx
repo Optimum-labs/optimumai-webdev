@@ -206,7 +206,7 @@ const AIForHealthcareAccessibility = () => {
         </HealthcareDescription>
         <br /> <br />
         <ApplyLink
-          href="https://docs.google.com/forms/d/e/1FAIpQLSd1ggnVtP4J5NyJk1b1CDTy_9596aad52uzUejYZqfVxIJ2Lw/viewform"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfCEBH_cL3zAyR3g96-MB3K02Athgiz_VxyhHvNXNbppNnOEQ/viewform"
           target="_blank"
         >
           Apply for Challenge
