@@ -1,4 +1,4 @@
-import logoWhite from "../../../assets/images/logo/logo-white.png";
+import logoWhite from "../../../assets/images/logo/optimum-logo.jpeg";
 import shape1 from "../../../assets/images/footer/shape-1.svg";
 import blogFooter1 from "../../../assets/images/blog/blog-footer-01.jpg";
 import blogFooter2 from "../../../assets/images/blog/blog-footer-02.jpg";
@@ -14,12 +14,12 @@ function Footer() {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
-              <Link to="#" className="mb-6 inline-block max-w-[160px]">
-                <img src={logoWhite} alt="logo" className="max-w-full" />
+              <Link to="#" className="mb- inline-block max-w-[160px]">
+                <img src={logoWhite} alt="logo" className="max-w-full rounded" />
               </Link>
               <p className="mb-8 max-w-[270px] text-base text-gray-7">
-                OptimumAI Labs is a community of learners, thinkers, and
-                interview preppers...
+                OptimumAI is provide the best way to improve your skills and knowledge.
+                Like a best friend, we are always here for you...
               </p>
               <div className="-mx-3 flex items-center">
                 <Link to="#" className="px-3 text-gray-7 hover:text-white">
@@ -60,7 +60,7 @@ function Footer() {
                     <path d="M16.0276 4.96777C15.6432 4.96777 15.318 5.29304 15.318 5.67745C15.318 6.06186 15.6432 6.38713 16.0276 6.38713C16.412 6.38713 16.7373 6.06186 16.7373 5.67745C16.7373 5.29304 16.4416 4.96777 16.0276 4.96777Z" />
                   </svg>
                 </Link>
-                <Link to="#" className="px-3 text-gray-7 hover:text-white">
+                <Link to="https://www.linkedin.com/company/optimumai/" target="_blank" className="px-3 text-gray-7 hover:text-white">
                   <svg
                     width="22"
                     height="22"
@@ -110,7 +110,7 @@ function Footer() {
                     to="/about"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Contect
+                    Contact
                   </Link>
                 </li>
               </ul>

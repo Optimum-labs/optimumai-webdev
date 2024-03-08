@@ -61,7 +61,7 @@ const Features = () => {
             </div>
             <div className="mb-8">
               <h3 className="mb-4 text-2xl font-bold text-dark dark:text-white">
-                Finacial Management 
+                Financial Management 
               </h3>
               <p className="text-base text-body-color dark:text-dark-6">
                 Optimum AI helps you to manage your finances by providing you
