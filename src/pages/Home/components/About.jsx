@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
+      className="bg-gray-1 mt-16 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
     >
       <div className="container">
         <div className="wow fadeInUp" data-wow-delay=".2s">
@@ -15,9 +15,9 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Welcome to OptimumAI Labs
+                  Welcome to OptimumAI
                 </h2>
-                <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <p className="mb-10 text-base text-justify leading-relaxed text-body-color dark:text-dark-6">
                   OptimumAI Labs is actively developing a cutting-edge product
                   that leverages AI to enhance soft skills. The platform
                   utilizes AI algorithms to assess and improve key skills such

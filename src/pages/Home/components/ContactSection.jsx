@@ -45,11 +45,8 @@ function ContactSection() {
                       How Can We Help?
                     </h5>
                     <p className="text-base text-body-color dark:text-dark-6">
-                       support@optimumlabs-ai.com
-                    </p>
-                    <p className="mt-1 text-base text-body-color dark:text-dark-6">
-                      contact@optimumlabs-ai.com
-                    </p>
+                       info@optimumai.in
+                    </p>                    
                   </div>
                 </div>
               </div>

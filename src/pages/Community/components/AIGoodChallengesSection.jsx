@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
-import image1 from "../img/free-mock.png";
-import image2 from "../img/mock.png";
+import image1 from "../img/mock.png";
+import image2 from "../img/financial-plan.jpeg";
 import { Link } from "react-router-dom";
 
 const Section = styled.section`
@@ -72,19 +72,21 @@ const Image = styled.img`
 `;
 
 const Content = styled.div`
-  padding: 1.5rem;
+  padding: 1.5rem;  
 `;
 
 const ProjectTitle = styled.h3`
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  max-width: 330px;
   text-align: center;
+  border-bottom: 1px solid gray;
 `;
 
 const Description = styled.p`
   font-size: 1rem;
-  max-width: 300px;
+  max-width: 330px;
   text-align: justify;
 `;
 
@@ -116,44 +118,20 @@ const AIGoodChallengesSection = () => {
   const projects = [
     {
       id: 1,
-      title: "AI for Climate Action",
+      title: "AI system for Habit Building using Recipes of Soft Skills",
       description:
-        "AI for Climate Action is a global innovation challenge to identify and develop AI solutions to address climate change. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing environmental proble",
+        "The AI system for Habit Building using Recipes of Soft Skills is a global innovation challenge to identify and develop AI solutions to address the world’s most pressing healthcare accessibility problems. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing healthcare accessibility problems.",
       imageUrl: image1,
-      link: "/ai-for-climate-action",
+      link: "/challanges/ai-system-for-habit-building-using-recipes-of-soft-skills",
     },
     {
       id: 2,
-      title: "AI for Healthcare Accessibility",
+      title: "AI Financial Planner using Multi-Agent Architecture",
       description:
-        "AI for Healthcare Accessibility is a global innovation challenge to identify and develop AI solutions to address healthcare accessibility. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing healthcare accessibility problems.",
+        "The AI Financial Planner using Multi-Agent Architecture is a global innovation challenge to identify and develop AI solutions to address the world’s most pressing healthcare accessibility problems. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing healthcare accessibility problems.",
       imageUrl: image2,
-      link: "/ai-for-healthcare-accessibility",
-    },
-    // {
-    //   id: 3,
-    //   title: 'Project 3',
-    //   description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-    //   imageUrl: 'https://via.placeholder.com/300',
-    // },
-    // {
-    //   id: 4,
-    //   title: 'Project 4',
-    //   description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
-    //   imageUrl: 'https://via.placeholder.com/300',
-    // },
-    // {
-    //   id: 5,
-    //   title: 'Project 5',
-    //   description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
-    //   imageUrl: 'https://via.placeholder.com/300',
-    // },
-    // {
-    //   id: 6,
-    //   title: 'Project 6',
-    //   description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.',
-    //   imageUrl: 'https://via.placeholder.com/300',
-    // },
+      link: "/challanges/ai-financial-planner-using-multi-agent-architecture",
+    }
   ];
 
   const handleScroll = (direction) => {

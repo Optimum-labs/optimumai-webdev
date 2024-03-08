@@ -83,7 +83,7 @@ const TeamMemberList = () => {
   const teamMembers = [
     {
       name: 'Muhammad Yahiya',
-      role: 'Software Engineer',
+      role: 'Founder & CEO',
       imageUrl: 'https://avatars.githubusercontent.com/u/47945063?v=4',
       social: {
         twitter: 'https://twitter.com/',
@@ -93,7 +93,7 @@ const TeamMemberList = () => {
     },
     {
       name: 'Basant',
-      role: 'Full Stack Developer',
+      role: 'CTO & Co-Founder',
       imageUrl: 'https://github.com/basanthsk.png',
       social: {
         twitter: 'https://twitter.com/',
@@ -103,7 +103,7 @@ const TeamMemberList = () => {
     },
     {
       name: 'Ajay Dhangar',
-      role: 'Software Engineer',
+      role: 'Full Stack Engineer',
       imageUrl: 'https://github.com/ajay-dhangar.png',
       social: {
         twitter: 'https://twitter.com/',
@@ -113,7 +113,7 @@ const TeamMemberList = () => {
     },
     {
       name: 'Anand Shende',
-      role: 'Software Engineer',
+      role: 'Head of Product',
       imageUrl: 'https://avatars.githubusercontent.com/u/24247490',
       social: {
         twitter: 'https://twitter.com/',

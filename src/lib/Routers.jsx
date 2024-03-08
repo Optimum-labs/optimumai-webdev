@@ -8,8 +8,8 @@ import Contact from "../pages/Contact";
 import Login from "../components/form/Login";
 import Pricing from "../pages/Pricing";
 import Community from "../pages/Community";
-import AIForHealthcareAccessibility from "../pages/Community/components/challenges/AIForHealthcareAccessibility";
-import AIForClimateAction from "../pages/Community/components/challenges/AIForClimateAction";
+import AIForHealthcareAccessibility from "../pages/Community/components/challenges/challange-2";
+import AIForClimateAction from "../pages/Community/components/challenges/challenge-1";
 // import Team from "./pages/Team";
 
 const Routers = () => {
@@ -27,10 +27,10 @@ const Routers = () => {
       <Route path="/optimumai-webdev" element={<Home />} />
       <Route path="/community" element={<Community />} />
       <Route
-        path="/ai-for-healthcare-accessibility"
+        path="/challanges/ai-financial-planner-using-multi-agent-architecture"
         element={<AIForHealthcareAccessibility />}
       />
-      <Route path="/ai-for-climate-action" element={<AIForClimateAction />} />
+      <Route path="/challanges/ai-system-for-habit-building-using-recipes-of-soft-skills" element={<AIForClimateAction />} />
     </Routes>
   );
 };
