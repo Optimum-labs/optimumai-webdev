@@ -94,7 +94,7 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Features
+                    Pricing
                   </Link>
                 </li>
                 <li>
@@ -102,7 +102,7 @@ function Footer() {
                     to="/"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Home
+                    Team
                   </Link>
                 </li>
                 <li>
@@ -110,7 +110,7 @@ function Footer() {
                     to="/about"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    About
+                    Contect
                   </Link>
                 </li>
               </ul>
@@ -119,7 +119,7 @@ function Footer() {
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
-                Features
+                Terms & Conditions
               </h4>
               <ul>
                 <li>
@@ -157,7 +157,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+          <div className="w-full px-2 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
                 Our Products
@@ -168,7 +168,7 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Skill Assessment
+                    Soft Skills Assessment
                   </Link>
                 </li>
                 <li>
@@ -176,7 +176,7 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Interview Preps
+                    Interview Preparetion 
                   </Link>
                 </li>
                 <li>
@@ -184,7 +184,7 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Health & Wellness
+                    Mental Health Assessment
                   </Link>
                 </li>
                 <li>
@@ -192,12 +192,12 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Finacial Planning
+                    Financial Management
                   </Link>
                 </li>
               </ul>
             </div>
-          </div>
+          </div>          
           <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">

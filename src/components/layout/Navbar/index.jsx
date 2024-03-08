@@ -2,8 +2,8 @@ import React, { useState, useEffect} from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import "../../../assets/css/tailwind.css";
-import logoWhite from "../../../assets/images/logo/logo-white.png";
-import darkLogo from "../../../assets/images/logo/dark-logo.png";
+import logoWhite from "../../../assets/images/logo/optimum-logo.jpeg";
+import darkLogo from "../../../assets/images/logo/optimum-logo.jpeg";
 import AuthButton from "../../AuthButton";
 import NAVBAR_MENU from "../../../data/navbar";
 
@@ -84,7 +84,7 @@ function Navbar() {
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="w-60 max-w-full px-2">
             <Link to="/" className="navbar-logo block w-full py-5">
-              <img src={logoWhite} alt="logo" className="header-logo w-full" />
+              <img src={logoWhite} alt="logo" className="header-logo w-2 rounded" />
             </Link>
           </div>
           <div className="flex w-full items-center justify-between px-4">

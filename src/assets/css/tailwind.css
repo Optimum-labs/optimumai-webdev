@@ -2979,3 +2979,11 @@ body {
     padding: 60px;
   }
 }
+
+.w-2 {
+  width: 70px;
+}
+
+.text-justify {
+  text-align: justify;
+}

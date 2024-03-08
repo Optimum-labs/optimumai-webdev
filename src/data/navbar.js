@@ -8,6 +8,10 @@ const NAVBAR_MENU = [
     'link': '/about'
   },
   {
+    'label': 'Products',
+    'link': '/'
+  },
+  {
     'label': 'Pricing',
     'link': '/pricing'
   },
@@ -16,13 +20,13 @@ const NAVBAR_MENU = [
   //   'link': '/team'
   // },
   {
-    'label': 'Contact',
-    'link': '/contact'
-  },
-  {
     'label': 'Community',
     'link': '/community'
   },
+  {
+    'label': 'Contact',
+    'link': '/contact'
+  },  
 ];
 
 export default NAVBAR_MENU;

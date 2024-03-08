@@ -1,5 +1,5 @@
-import aboutImage1 from "../../assets/images/about/about-image-01.jpg";
-import aboutImage2 from "../../assets/images/about/about-image-02.jpg";
+// import aboutImage1 from "../../assets/images/about/about-image-01.jpg";
+// import aboutImage2 from "../../assets/images/about/about-image-02.jpg";
 
 const About = () => {
   return (
@@ -10,36 +10,14 @@ const About = () => {
       >
         <div className="container">
           <div className="wow fadeInUp" data-wow-delay=".2s">
-            <div className="-mx-4 flex flex-wrap items-center">
-              <div className="w-full px-4 lg:w-1/2">
-                <div className="mb-12 max-w-[540px] lg:mb-0">
-                  <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                    Welcome to OptimumAI Labs
+            <div className="">
+              <div className="w-full px-4">
+                <div className="mb-12 lg:mb-0">
+                  <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2] text-center">
+                    Welcome to OptimumAI
                   </h2>
-                  <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                    OptimumAI Labs is actively developing a cutting-edge product
-                    that leverages AI to enhance soft skills. The platform
-                    utilizes AI algorithms to assess and improve key skills such
-                    as communication, collaboration, problem-solving, and
-                    leadership. Our focus extends beyond mere functionality,
-                    incorporating robust user engagement features to create an
-                    interactive learning experience.
-                    <br />
-                    <br />
-                    Within the OptimumAI Labs platform, users will find a dynamic
-                    environment for collaboration, enabling individuals to work
-                    on projects related to human improvement applications and
-                    startups. This collaborative space fosters creativity and
-                    knowledge sharing among users, promoting a culture of
-                    continuous learning.
-                    <br />
-                    <br />
-                    As part of our commitment to growth, OptimumAI Labs guides
-                    educators to evolve into effective mentors through dedicated
-                    mentoring and monitoring initiatives. This emphasis on
-                    mentoring contributes to the overall user experience,
-                    creating a supportive ecosystem that goes beyond conventional
-                    learning platforms.
+                  <p className="mb-10 text-base text-justify leading-relaxed text-body-color dark:text-dark-6">
+                  OptimumAI is driven by the belief that humans should be at the forefront of AI and technology. As we work towards accelerating the development of intelligent products, our ultimate goal is to ensure that humans retain control over AI. We envision a future where human intelligence remains competitive with AI, fostering a symbiotic relationship between humans and technology. By empowering individuals to understand, shape, and harness the potential of AI, OptimumAI strives to enhance human productivity and contribute to the responsible and ethical evolution of artificial intelligence
                   </p>
 
                   {/* <Link
@@ -48,42 +26,6 @@ const About = () => {
                   >
                     Learn More
                   </Link> */}
-                </div>
-              </div>
-
-              <div className="w-full px-4 lg:w-1/2">
-                <div className="-mx-2 flex flex-wrap sm:-mx-4 lg:-mx-2 xl:-mx-4">
-                  <div className="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
-                    <div className="mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]">
-                      <img
-                        src={aboutImage1}
-                        alt="about"
-                        className="h-full w-full object-cover object-center"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
-                    <div className="mb-4 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]">
-                      <img
-                        src={aboutImage2}
-                        alt="about"
-                        className="h-full w-full object-cover object-center"
-                      />
-                    </div>
-
-                    <div className="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
-                      <div>
-                        <span className="block text-5xl font-extrabold text-white">
-                          09
-                        </span>
-                        <span className="block text-base font-semibold text-white">
-                          Years of Experience
-                        </span>
-                      </div>
-                      {/* Additional SVG elements if needed */}
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
