@@ -11,10 +11,10 @@ const NAVBAR_MENU = [
     'label': 'Products',
     'link': '/'
   },
-  {
-    'label': 'Pricing',
-    'link': '/pricing'
-  },
+  // {
+  //   'label': 'Pricing',
+  //   'link': '/pricing'
+  // },
   // {
   //   'label': 'Team',
   //   'link': '/team'
