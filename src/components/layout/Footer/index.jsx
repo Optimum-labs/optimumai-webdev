@@ -15,11 +15,15 @@ function Footer() {
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <Link to="#" className="mb- inline-block max-w-[160px]">
-                <img src={logoWhite} alt="logo" className="max-w-full rounded" />
+                <img
+                  src={logoWhite}
+                  alt="logo"
+                  className="max-w-full rounded"
+                />
               </Link>
-              <p className="mb-8 max-w-[270px] text-base text-gray-7">
-                OptimumAI is provide the best way to improve your skills and knowledge.
-                Like a best friend, we are always here for you...
+              <p className="mb-8 mt-4 max-w-[280px] text-base text-gray-7">
+                OptimumAI is driven by the belief that humans should be at the
+                forefront of AI and technology.
               </p>
               <div className="-mx-3 flex items-center">
                 <Link to="#" className="px-3 text-gray-7 hover:text-white">
@@ -60,7 +64,11 @@ function Footer() {
                     <path d="M16.0276 4.96777C15.6432 4.96777 15.318 5.29304 15.318 5.67745C15.318 6.06186 15.6432 6.38713 16.0276 6.38713C16.412 6.38713 16.7373 6.06186 16.7373 5.67745C16.7373 5.29304 16.4416 4.96777 16.0276 4.96777Z" />
                   </svg>
                 </Link>
-                <Link to="https://www.linkedin.com/company/optimumai/" target="_blank" className="px-3 text-gray-7 hover:text-white">
+                <Link
+                  to="https://www.linkedin.com/company/optimumai/"
+                  target="_blank"
+                  className="px-3 text-gray-7 hover:text-white"
+                >
                   <svg
                     width="22"
                     height="22"
@@ -91,7 +99,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/pricing"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Pricing
@@ -176,7 +184,7 @@ function Footer() {
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Interview Preparetion 
+                    Interview Preparetion
                   </Link>
                 </li>
                 <li>
@@ -197,7 +205,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-          </div>          
+          </div>
           <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">

@@ -131,6 +131,14 @@ const AIGoodChallengesSection = () => {
         "The AI Financial Planner using Multi-Agent Architecture is a global innovation challenge to identify and develop AI solutions to address the world’s most pressing healthcare accessibility problems. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing healthcare accessibility problems.",
       imageUrl: image2,
       link: "/challanges/ai-financial-planner-using-multi-agent-architecture",
+    },
+    {
+      id: 3,
+      title: "AI Powered Content Moderation for Digital Platforms",
+      description:
+        "The AI Powered Content Moderation for Digital Platforms is a global innovation challenge to identify and develop AI solutions to address the world’s most pressing healthcare accessibility problems. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing healthcare accessibility problems.",
+      imageUrl: image1,
+      // link: "/challanges/ai-powered-content-moderation-for-digital-platforms",
     }
   ];
 
