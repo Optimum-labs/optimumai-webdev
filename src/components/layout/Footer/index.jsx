@@ -5,6 +5,14 @@ import blogFooter2 from "../../../assets/images/blog/blog-footer-02.jpg";
 import { Link } from "react-router-dom";
 
 function Footer() {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <footer
       className="wow fadeInUp relative z-10 bg-[#090E34] pt-20 lg:pt-[100px]"
@@ -93,6 +101,7 @@ function Footer() {
                   <Link
                     to="/community"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Community
                   </Link>
@@ -101,22 +110,25 @@ function Footer() {
                   <Link
                     to="/pricing"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Pricing
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/"
+                    to="/team"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Team
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/about"
+                    to="/contact"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Contact
                   </Link>
