@@ -11,6 +11,7 @@ import Community from "../pages/Community";
 import AIForHealthcareAccessibility from "../pages/Community/components/challenges/challange-2";
 import AIForClimateAction from "../pages/Community/components/challenges/challenge-1";
 import Team from "../pages/Community/components/TeamMemberList";
+import PrivacyPolicy from "../pages/terms-conditions/PrivacyPolicy";
 
 const Routers = () => {
   return (
@@ -28,6 +29,7 @@ const Routers = () => {
       <Route path="/dashboard" element={<Login />} />
       <Route path="/optimumai-webdev" element={<Home />} />
       <Route path="/community" element={<Community />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route
         path="/challanges/ai-financial-planner-using-multi-agent-architecture"
         element={<AIForHealthcareAccessibility />}

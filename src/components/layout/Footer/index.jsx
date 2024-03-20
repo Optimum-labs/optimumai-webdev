@@ -146,14 +146,16 @@ function Footer() {
                   <Link
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     How it works
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/privacy-policy"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Privacy policy
                   </Link>
@@ -162,6 +164,7 @@ function Footer() {
                   <Link
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Terms of Service
                   </Link>
@@ -170,6 +173,7 @@ function Footer() {
                   <Link
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Refund policy
                   </Link>
@@ -187,6 +191,7 @@ function Footer() {
                   <Link
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Soft Skills Assessment
                   </Link>
@@ -195,6 +200,7 @@ function Footer() {
                   <Link
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Interview Preparetion
                   </Link>
@@ -203,6 +209,7 @@ function Footer() {
                   <Link
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Mental Health Assessment
                   </Link>
@@ -211,6 +218,7 @@ function Footer() {
                   <Link
                     to="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    onClick={scrollToTop}
                   >
                     Financial Management
                   </Link>
@@ -224,7 +232,7 @@ function Footer() {
                 Latest blog
               </h4>
               <div className="flex flex-col gap-8">
-                <Link to="#" className="group flex items-center gap-[22px]">
+                <Link to="#" className="group flex items-center gap-[22px]" onClick={scrollToTop}>
                   <div className="overflow-hidden rounded">
                     <img src={blogFooter1} alt="blog" />
                   </div>
@@ -232,7 +240,7 @@ function Footer() {
                     I think really important to design with...
                   </span>
                 </Link>
-                <Link to="#" className="group flex items-center gap-[22px]">
+                <Link to="#" className="group flex items-center gap-[22px]" onClick={scrollToTop}>
                   <div className="overflow-hidden rounded">
                     <img src={blogFooter2} alt="blog" />
                   </div>
