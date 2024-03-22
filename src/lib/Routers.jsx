@@ -12,6 +12,7 @@ import AIForHealthcareAccessibility from "../pages/Community/components/challeng
 import AIForClimateAction from "../pages/Community/components/challenges/challenge-1";
 import Team from "../pages/Community/components/TeamMemberList";
 import PrivacyPolicy from "../pages/terms-conditions/PrivacyPolicy";
+import TermOfServices from "../pages/terms-conditions/TermsOfServices";
 
 const Routers = () => {
   return (
@@ -30,6 +31,7 @@ const Routers = () => {
       <Route path="/optimumai-webdev" element={<Home />} />
       <Route path="/community" element={<Community />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-of-services" element={<TermOfServices />} />
       <Route
         path="/challanges/ai-financial-planner-using-multi-agent-architecture"
         element={<AIForHealthcareAccessibility />}

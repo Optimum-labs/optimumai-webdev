@@ -162,7 +162,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/terms-of-services"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                     onClick={scrollToTop}
                   >
