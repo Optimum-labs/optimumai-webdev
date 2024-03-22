@@ -2985,5 +2985,9 @@ body {
 }
 
 .text-justify {
-  text-align: justify;
+  text-align: justify;  
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
