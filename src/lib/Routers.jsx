@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Home from "../pages/Home";
 import About from "../pages/About";
-import Products from "../pages/Projects";
+import Products from "../pages/Products";
 import MockInterviewBot from "../pages/MockInterviewBot";
 import Contact from "../pages/Contact";
 import Login from "../components/form/Login";

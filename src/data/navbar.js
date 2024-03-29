@@ -9,7 +9,7 @@ const NAVBAR_MENU = [
   },
   {
     'label': 'Products',
-    'link': '/'
+    'link': '/products'
   },
   // {
   //   'label': 'Pricing',

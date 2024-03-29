@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header";
 
 const Hero = () => {
   return (
@@ -13,21 +14,7 @@ const Hero = () => {
               className="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
               data-wow-delay=".2s"
             >
-              <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                Welcome to OptimumAI Labs
-              </h1>
-              <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                At OptimumAI Labs, we are at the forefront of innovation,
-                actively developing a cutting-edge product that harnesses the
-                power of Artificial Intelligence to elevate soft skills.
-              </p>
-              
-              <div>
-                <p className="mb-4 text-center text-base font-medium text-white">
-                  Our platform is designed to transform the way individuals
-                  approach learning and personal development.                  
-                </p>                
-              </div>
+              <Header />
             </div>
           </div>
 
