@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
           Information you give us : We collect the information you voluntarily
           provide to us by filling in forms on our website{" "}
           <span className="text-primary font-bold cursor-pointer">
-            goodmind.co
+             optimumai.in
           </span>
           , by corresponding with us by phone, e-mail, live-chat services, or in
           other ways. The information you give us may include your name,
