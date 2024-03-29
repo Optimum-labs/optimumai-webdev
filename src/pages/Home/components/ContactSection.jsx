@@ -10,8 +10,8 @@ function ContactSection() {
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div className="ud-contact-content-wrapper">
               <div className="ud-contact-title mb-12 lg:mb-[150px]">
-                <span className="mb-6 block text-base font-medium text-dark dark:text-white">
-                  CONTACT US
+                <span className="mb-6 block text-base font-medium text-primary">
+                  <b>CONTACT US</b>
                 </span>
                 <h2 className="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white">
                   Let's talk about your problem.

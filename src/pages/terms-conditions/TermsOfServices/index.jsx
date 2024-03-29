@@ -2,7 +2,7 @@ import React from "react";
 
 const TermOfServices = () => {
   return (
-    <div className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]">
+    <div className="bg-gray-1 pb-8 pt-0 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px] mt-8">
       <div className="privacy-policy px-8">
         <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2] text-center">
           Terms of Services
