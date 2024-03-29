@@ -2,8 +2,13 @@ import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 
 const Section = styled.section`
-  padding: 48px 0;
   text-align: center;
+  // background: linear-gradient( 30deg,
+  //   rgba(0, 0, 0, 0.2) 0%,
+  //   rgba(28, 96, 156, 0) 100%,
+  // );
+  padding: 1rem 2rem 5rem 2rem;
+  border-radius: 0.5rem;
 `;
 
 const Container = styled.div`
