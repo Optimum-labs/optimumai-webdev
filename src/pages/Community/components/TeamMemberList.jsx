@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import teamMembers from '../../../data/teamMembers';
 
 const Section = styled.section`
@@ -93,12 +93,6 @@ const TeamMemberList = () => {
               <Name>{member.name}</Name>
               <Role>{member.role}</Role>
               <SocialLinks>
-                <a href={member.social.twitter} target="_blank" rel="noopener noreferrer">
-                  <FaTwitter />
-                </a>
-                <a href={member.social.github} target="_blank" rel="noopener noreferrer">
-                  <FaGithub />
-                </a>
                 <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
                 </a>
