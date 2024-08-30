@@ -36,7 +36,8 @@ const Routers = () => {
         path="/challanges/ai-financial-planner-using-multi-agent-architecture"
         element={<AIForHealthcareAccessibility />}
       />
-      <Route path="/challanges/ai-system-for-habit-building-using-recipes-of-soft-skills" element={<AIForClimateAction />} />
+      <Route path="/challanges/multi-agent-ai-content-creation-chatbot-project" element={<AIForClimateAction />} />
+      <Route path="/challanges/ai-powered-content-moderation-for-digital-platforms" element={<AIForClimateAction />} />
     </Routes>
   );
 };
