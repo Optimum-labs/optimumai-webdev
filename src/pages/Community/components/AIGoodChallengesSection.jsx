@@ -118,7 +118,7 @@ const AIGoodChallengesSection = () => {
   const projects = [
     {
       id: 1,
-      title: "AI system for Habit Building using Recipes of Soft Skills",
+      title: " Multi-Agent AI Content Creation Chatbot project",
       description:
         "The AI system for Habit Building using Recipes of Soft Skills is a global innovation challenge to identify and develop AI solutions to address the world’s most pressing healthcare accessibility problems. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing healthcare accessibility problems.",
       imageUrl: image1,
