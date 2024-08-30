@@ -118,11 +118,11 @@ const AIGoodChallengesSection = () => {
   const projects = [
     {
       id: 1,
-      title: " Multi-Agent AI Content Creation Chatbot project",
+      title: " Multi-Agent AI Content Creation Chatbot Project",
       description:
-        "The AI system for Habit Building using Recipes of Soft Skills is a global innovation challenge to identify and develop AI solutions to address the world’s most pressing healthcare accessibility problems. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing healthcare accessibility problems.",
+        "The Chatbot for Content Creation project aims to develop an intelligent chatbot that assists users in generating diverse types of content based on a given prompt. Leveraging advanced AI models, the chatbot will create text, audio, images, or videos tailored to the user's needs. Designed to handle various content formats, this versatile tool will cater to content creators, marketers, educators, and more.",
       imageUrl: image1,
-      link: "/challanges/ai-system-for-habit-building-using-recipes-of-soft-skills",
+      link: "/challanges/multi-agent-ai-content-creation-chatbot-project",
     },
     {
       id: 2,
@@ -132,14 +132,14 @@ const AIGoodChallengesSection = () => {
       imageUrl: image2,
       link: "/challanges/ai-financial-planner-using-multi-agent-architecture",
     },
-    // {
-    //   id: 3,
-    //   title: "AI Powered Content Moderation for Digital Platforms",
-    //   description:
-    //     "The AI Powered Content Moderation for Digital Platforms is a global innovation challenge to identify and develop AI solutions to address the world’s most pressing healthcare accessibility problems. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing healthcare accessibility problems.",
-    //   imageUrl: image1,
-    //   // link: "/challanges/ai-powered-content-moderation-for-digital-platforms",
-    // }
+    {
+      id: 3,
+      title: "AI Powered Content Moderation for Digital Platforms",
+      description:
+        "The AI Powered Content Moderation for Digital Platforms is a global innovation challenge to identify and develop AI solutions to address the world’s most pressing healthcare accessibility problems. The challenge is open to individuals, teams, and organizations who are using AI to address the world’s most pressing healthcare accessibility problems.",
+      imageUrl: image1,
+      link: "/challanges/ai-powered-content-moderation-for-digital-platforms",
+    }
   ];
 
   const handleScroll = (direction) => {
