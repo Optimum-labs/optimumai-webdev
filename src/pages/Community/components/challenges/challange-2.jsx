@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../../img/financial-plan.jpeg";
-import leadImage from "../../img/lead1.jpeg"; // Add the correct path for lead images
+import leadImage from "../../img/lead.jpeg"; // Add the correct path for lead images
 import leadImage2 from "../../img/lead2.jpeg"; // Add the correct path for lead images
 
 const Container = styled.div`
