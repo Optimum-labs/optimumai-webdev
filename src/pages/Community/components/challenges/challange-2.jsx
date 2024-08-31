@@ -286,12 +286,12 @@ const AIForHealthcareAccessibility = () => {
                   <LeadDetails>
                     <LeadName>Vijaya Krishna</LeadName>
                     <LeadDesignation>Senior AI Researcher</LeadDesignation>
-                    <LinkedInLink href="https://www.linkedin.com/in/vijaya-krishna-k-139487297/" target="_blank">
-                      Connect on LinkedIn
-                    </LinkedInLink>
                     <LeadSummary>
                       Vijaya Krishna is a seasoned AI researcher with extensive experience in developing and deploying AI models. He has led multiple projects focused on advanced machine learning techniques, contributing to both academia and industry with innovative solutions.
                     </LeadSummary>
+                    <LinkedInLink href="https://www.linkedin.com/in/vijaya-krishna-k-139487297/" target="_blank">
+                      Connect on LinkedIn
+                    </LinkedInLink>
                   </LeadDetails>
                 </div>
                 <div>
@@ -299,9 +299,6 @@ const AIForHealthcareAccessibility = () => {
                   <LeadDetails>
                     <LeadName>Swati Garg</LeadName>
                     <LeadDesignation>AI Researcher & Aws Architect</LeadDesignation>
-                    <LinkedInLink href="https://www.linkedin.com/in/johndoe/" target="_blank">
-                      Connect on LinkedIn
-                    </LinkedInLink>
                     <LeadSummary>
                     Ph.D. in Physics with over 3 years of postdoctoral research experience, complemented
                     by 6+ months as a Data Analyst/Scientist. Demonstrates strong analytical skills in 
@@ -312,6 +309,9 @@ const AIForHealthcareAccessibility = () => {
                     skilled as an AWS Data Architect, with experience in developing data pipelines, API
                     implementation, and data modeling.                    
                     </LeadSummary>
+                    <LinkedInLink href="https://www.linkedin.com/in/johndoe/" target="_blank">
+                      Connect on LinkedIn
+                    </LinkedInLink>
                   </LeadDetails>
                 </div>
               </ProjectLeadsContainer>
