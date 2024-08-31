@@ -97,6 +97,12 @@ const LeadDesignation = styled.p`
   margin: 5px 0;
 `;
 
+const LeadSummary = styled.p`
+  font-size: 1rem;
+  color: #4a5568;
+  margin-top: 10px;
+`;
+
 const LinkedInLink = styled.a`
   color: #2563eb;
   text-decoration: none;
@@ -188,7 +194,12 @@ const Challenge1 = () => {
             <LeadImage src={leadImage} alt="Project Lead" />
             <LeadDetails>
               <LeadName>Vijaya Krishna</LeadName>
-              <LeadDesignation>Senior AI Researcher</LeadDesignation>
+              <LeadDesignation>Senior AI Researcher</LeadDesignation><LeadSummary>
+                Detail-oriented data scientist specializing in market research and analysis. Proficient in utilizing Python for data extraction,<br />
+                statistical modeling, and generating actionable insights. Experienced in uncovering market trends and consumer behavior patterns<br />
+                through advanced analytics. Skilled in communicating findings to support strategic business decisions. Committed to leveraging <br />
+                data science techniques for informed market strategies and sustained business growth.
+              </LeadSummary>
               <LinkedInLink href="https://www.linkedin.com/in/vijaya-krishna-k-139487297/" target="_blank">
                 Connect on LinkedIn
               </LinkedInLink>
