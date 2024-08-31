@@ -101,8 +101,10 @@ const LeadDesignation = styled.p`
 
 const LeadSummary = styled.p`
   font-size: 1rem;
+  line-height: 1.5;
   color: #4a5568;
   margin-top: 10px;
+  white-space: pre-wrap; /* This preserves the formatting of line breaks */
 `;
 
 const LinkedInLink = styled.a`
@@ -198,10 +200,10 @@ const Challenge1 = () => {
               <LeadName>Vijaya Krishna</LeadName>
               <LeadDesignation>Senior AI Researcher</LeadDesignation>
               <LeadSummary>
-                Detail-oriented data scientist specializing in GenAI Product  Development. <br />
-                Proficient in utilizing Python for data extraction, statistical  modeling, and <br />
-                generating actionable insights. Experienced in uncovering market  trends   and <br />
-                consumer behavior patterns through advanced analytics.Skilled in communicating <br />
+                Detail-oriented data scientist specializing in GenAI Product  Development. 
+                Proficient in utilizing Python for data extraction, statistical  modeling, and 
+                generating actionable insights. Experienced in uncovering market trends and 
+                consumer behavior patterns through advanced analytics.Skilled in communicating 
                 findings to support strategic business decisions.
               </LeadSummary>
               <LinkedInLink href="https://www.linkedin.com/in/vijaya-krishna-k-139487297/" target="_blank">
@@ -215,14 +217,14 @@ const Challenge1 = () => {
               <LeadName>Swati Garg</LeadName>
               <LeadDesignation> AI Researcher & Aws Architect </LeadDesignation>
               <LeadSummary>
-                Ph.D. in Physics with over 3 years of postdoctoral research experience, complemented <br />
-                by 6+ months as a Data Analyst/Scientist. Demonstrates strong analytical skills in <br />
-                collecting, organizing, analyzing, and disseminating large datasets with precision. <br />
-                Expertise includes feature engineering, machine learning, model building and deployment, <br />
-                and computer vision techniques. Proficient in creating user-friendly interfaces with Flask <br />
-                and Streamlit. Published over 15 papers in international journals and conferences. Also <br />
-                skilled as an AWS Data Architect, with experience in developing data pipelines, <br />
-                API implementation, and data modeling.
+                Ph.D. in Physics with over 3 years of postdoctoral research experience, complemented
+                by 6+ months as a Data Analyst/Scientist. Demonstrates strong analytical skills in 
+                collecting, organizing, analyzing, and disseminating large datasets with precision.
+                Expertise includes feature engineering, machine learning, model building and deployment,
+                and computer vision techniques. Proficient in creating user-friendly interfaces with Flask
+                and Streamlit. Published over 15 papers in international journals and conferences. Also 
+                skilled as an AWS Data Architect, with experience in developing data pipelines, API
+                implementation, and data modeling.
               </LeadSummary>
               <LinkedInLink href="https://www.linkedin.com/in/swati-garg-02513153/" target="_blank">
                 Connect on LinkedIn
