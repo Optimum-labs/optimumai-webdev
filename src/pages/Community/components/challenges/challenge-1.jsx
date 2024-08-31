@@ -59,6 +59,12 @@ const ImpactList = styled.ol`
   margin: 20px 0;
 `;
 
+const ButtonContainer = styled.div`
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+`;
+
 const ApplyLink = styled.a`
   padding: 10px 20px;
   border-radius: 8px;
@@ -117,10 +123,10 @@ const Challenge1 = () => {
           Deployment and Fine-Tuning on AWS Cloud/Azure.<br />
         </ClimateActionDescription>
         <ClimateActionDescription>
-          <SectionTitle>Project Duration - 4 Weeks (Starts from 15th Sept 2024)
-            <a href="https://docs.google.com/document/d/1K2kDCddwMrx0NLt6cokDdbyfsQzyuTWbIrIs1IrahiQ/edit?usp=sharing" style={{ marginLeft: '10px', fontSize: '1rem', color: '#2563eb' }}>
+          <SectionTitle>Project Duration - 4 Weeks (Starts from 15th Sept 2024)</SectionTitle>
+{/*             <a href="https://docs.google.com/document/d/1K2kDCddwMrx0NLt6cokDdbyfsQzyuTWbIrIs1IrahiQ/edit?usp=sharing" style={{ marginLeft: '10px', fontSize: '1rem', color: '#2563eb' }}>
               View Problem Statement
-            </a></SectionTitle>
+            </a></SectionTitle> */}
           <ImpactList>
             <li>Week 1: Project Initiation, Planning, and Market Research</li>
             <li>Week 2: Designing Multi-Agent Architecture and LLM Integration</li>
@@ -128,9 +134,14 @@ const Challenge1 = () => {
             <li>Week 4: Project Report Submission with a Final Demo.</li>
           </ImpactList>
         </ClimateActionDescription>
-        <ApplyLink href="https://forms.gle/8na2REeK7pxXPKGn9" target="_blank">
+        <ButtonContainer>
+          <ApplyLink href="https://docs.google.com/document/d/1K2kDCddwMrx0NLt6cokDdbyfsQzyuTWbIrIs1IrahiQ/edit?usp=sharing" target="_blank">
+          View Problem Statement
+          </ApplyLink>
+          <ApplyLink href="https://forms.gle/8na2REeK7pxXPKGn9" target="_blank">
           Apply for Challenge
-        </ApplyLink>
+          </ApplyLink>
+        </ButtonContainer>
       </Container>
     </ClimateActionContainer>
   );
