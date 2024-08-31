@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import img from "../../img/mock.png"; 
+import img from "../../img/mock.png";
+import leadImage from "../../img/lead.png"; // Add the image path for the project lead
 
 const Container = styled.div`
   margin-top: 80px;
@@ -65,6 +66,45 @@ const ButtonContainer = styled.div`
   gap: 10px;
 `;
 
+const ProjectLeadsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+`;
+
+const LeadImage = styled.img`
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+`;
+
+const LeadDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const LeadName = styled.h4`
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 600;
+`;
+
+const LeadDesignation = styled.p`
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin: 5px 0;
+`;
+
+const LinkedInLink = styled.a`
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 1rem;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 const ApplyLink = styled.a`
   padding: 10px 20px;
   border-radius: 8px;
@@ -142,6 +182,19 @@ const Challenge1 = () => {
           Apply for Challenge
           </ApplyLink>
         </ButtonContainer>
+        <ClimateActionDescription>
+          <SectionTitle>Project Leads</SectionTitle>
+          <ProjectLeadsContainer>
+            <LeadImage src={leadImage} alt="Project Lead" />
+            <LeadDetails>
+              <LeadName>Vijaya Krishna</LeadName>
+              <LeadDesignation>Senior AI Researcher</LeadDesignation>
+              <LinkedInLink href="https://www.linkedin.com/in/vijaya-krishna-k-139487297/" target="_blank">
+                Connect on LinkedIn
+              </LinkedInLink>
+            </LeadDetails>
+          </ProjectLeadsContainer>
+        </ClimateActionDescription>
       </Container>
     </ClimateActionContainer>
   );
