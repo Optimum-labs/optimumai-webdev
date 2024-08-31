@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../../img/mock.png";
-import leadImage from "../../img/lead.png"; // Add the image path for the project lead
+import leadImage from "../../img/lead.jpeg"; // Add the image path for the project lead
 
 const Container = styled.div`
   margin-top: 80px;
