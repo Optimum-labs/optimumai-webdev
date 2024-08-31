@@ -16,9 +16,9 @@ const CTASection = () => {
                   </span>
                 </h2>
                 <p className="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
-                  OptimumAI  is a AI & Data Science Upskilling platform that helps you to Learn , tranform and Crack Job Interviews with Real World Projects and engage with your  community for Collaboartive Projects.
+                  OptimumAI  is an AI & Data Science Upskilling platform that helps you to learn, transform, and crack job interviews with real-world projects and engage with your community for collaborative projects.
                 </p>
-                <Link to="#"
+                <Link to="/community"
                   className="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]">
                   Join a Project now
                 </Link>
