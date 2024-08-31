@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import img from "../../img/mock.png";
 import leadImage from "../../img/lead.jpeg"; // Add the image path for the project lead
+import leadImage2 from "../../img/lead2.png"; // Add the image path for the second project lead
+
 
 const Container = styled.div`
   margin-top: 80px;
@@ -194,14 +196,34 @@ const Challenge1 = () => {
             <LeadImage src={leadImage} alt="Project Lead" />
             <LeadDetails>
               <LeadName>Vijaya Krishna</LeadName>
-              <LeadDesignation>Senior AI Researcher</LeadDesignation><LeadSummary>
-                Detail-oriented data scientist specializing in GenAI Product Development. <br />
-                Proficient in utilizing Python for data extraction, statistical modeling, <br />
-                and generating actionable insights. Experienced in uncovering market trends and <br />
-                consumer behavior patterns through advanced analytics. Skilled in communicating  <br />
-                findings to support strategic business decisions. <br />
+              <LeadDesignation>Senior AI Researcher</LeadDesignation>
+              <LeadSummary>
+                Detail-oriented data scientist specializing in GenAI Product  Development. <br />
+                Proficient in utilizing Python for data extraction, statistical  modeling, and <br />
+                generating actionable insights. Experienced in uncovering market  trends   and <br />
+                consumer behavior patterns through advanced analytics.Skilled in communicating <br />
+                findings to support strategic business decisions.
               </LeadSummary>
               <LinkedInLink href="https://www.linkedin.com/in/vijaya-krishna-k-139487297/" target="_blank">
+                Connect on LinkedIn
+              </LinkedInLink>
+            </LeadDetails>
+          </ProjectLeadsContainer>
+          <ProjectLeadsContainer>
+            <LeadImage src={leadImage2} alt="Project Lead 2" />
+            <LeadDetails>
+              <LeadName>Swati Garg</LeadName>
+              <LeadDesignation> AI Researcher & Aws Data Architect </LeadDesignation>
+              <LeadSummary>
+                Ph.D. in Physics with over 3 years of postdoctoral research experience, complemented <br />
+                by 6+ months as a Data Analyst/Scientist. Demonstrates strong analytical skills in <br />
+                collecting, organizing, analyzing, and disseminating large datasets with precision. <br />
+                Expertise includes feature engineering, machine learning, model building and deployment, <br />
+                and computer vision techniques. Proficient in creating user-friendly interfaces with Flask <br />
+                and Streamlit. Published over 15 papers in international journals and conferences. Also <br />
+                skilled as an AWS Data Architect, with experience in developing data pipelines, API implementation, and data modeling.
+              </LeadSummary>
+              <LinkedInLink href="https://www.linkedin.com/in/swati-garg-02513153/" target="_blank">
                 Connect on LinkedIn
               </LinkedInLink>
             </LeadDetails>
