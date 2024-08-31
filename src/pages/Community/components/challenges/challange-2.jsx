@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../../img/financial-plan.jpeg";
+import leadImage from "../../img/lead1.jpeg"; // Add the correct path for lead images
+import leadImage2 from "../../img/lead2.jpeg"; // Add the correct path for lead images
+
 const Container = styled.div`
   margin-top: 30px;
   padding: 40px;
@@ -13,8 +16,7 @@ const HealthcareContainer = styled.div`
   background-color: #f9fafb; /* Light gray background */
   color: #1a202c; /* Dark gray text color */
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   /* Tailwind CSS classes */
   @media (min-width: 640px) {
     padding: 2.5rem;
@@ -61,6 +63,63 @@ const ApplyLink = styled.a`
   }
 `;
 
+const SectionFlexContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px; /* Space between the sections */
+`;
+
+const SectionLeft = styled.div`
+  flex: 1; /* Takes up half the width */
+`;
+
+const SectionRight = styled.div`
+  flex: 1; /* Takes up half the width */
+`;
+
+const ProjectLeadsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+const LeadImage = styled.img`
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+`;
+
+const LeadDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const LeadName = styled.h3`
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+`;
+
+const LeadDesignation = styled.p`
+  font-size: 1rem;
+  margin: 0;
+`;
+
+const LinkedInLink = styled.a`
+  font-size: 0.9rem;
+  color: #2563eb;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const LeadSummary = styled.p`
+  font-size: 1rem;
+  line-height: 1.5;
+`;
+
 const AIForHealthcareAccessibility = () => {
   return (
     <HealthcareContainer>
@@ -68,7 +127,7 @@ const AIForHealthcareAccessibility = () => {
         <HealthcareTitle>
           AI Financial Planner using Multi-Agent Architecture
         </HealthcareTitle>
-        <HealthcareImage src={img} alt="AI for Healthcare Accessibility" />
+        <HealthcareImage src={img} alt="AI Financial Planner" />
         <HealthcareDescription>
           <strong>Introduction: </strong> <br /> In the rapidly evolving
           landscape of financial planning, the need for personalized and
@@ -204,6 +263,54 @@ const AIForHealthcareAccessibility = () => {
           <li>Week 4: Testing, Fine-Tuning, and User Interface Design</li>
           <li>Week 5: Finalizing Project Deliverables and Presentations.</li>
         </HealthcareDescription>
+        <SectionFlexContainer>
+          {/* Left Section: Project Duration */}
+          <SectionLeft>
+            <HealthcareDescription>
+              <strong>Project Duration:</strong> <br />
+              <li>Week 1: Understanding the Problem Statement, Literature Review, and Defining Key Metrics</li>
+              <li>Week 2: Designing Multi-Agent Architecture and LLM Integration</li>
+              <li>Week 3: Developing the AI Financial Planner Prototype</li>
+              <li>Week 4: Testing, Fine-Tuning, and User Interface Design</li>
+              <li>Week 5: Finalizing Project Deliverables and Presentations</li>
+            </HealthcareDescription>
+          </SectionLeft>
+
+          {/* Right Section: Project Leads */}
+          <SectionRight>
+            <HealthcareDescription>
+              <strong>Project Leads:</strong>
+              <ProjectLeadsContainer>
+                <div>
+                  <LeadImage src={leadImage} alt="Project Lead 1" />
+                  <LeadDetails>
+                    <LeadName>Vijaya Krishna</LeadName>
+                    <LeadDesignation>Senior AI Researcher</LeadDesignation>
+                    <LinkedInLink href="https://www.linkedin.com/in/vijaya-krishna-k-139487297/" target="_blank">
+                      Connect on LinkedIn
+                    </LinkedInLink>
+                    <LeadSummary>
+                      Vijaya Krishna is a seasoned AI researcher with extensive experience in developing and deploying AI models. He has led multiple projects focused on advanced machine learning techniques, contributing to both academia and industry with innovative solutions.
+                    </LeadSummary>
+                  </LeadDetails>
+                </div>
+                <div>
+                  <LeadImage src={leadImage2} alt="Project Lead 2" />
+                  <LeadDetails>
+                    <LeadName>John Doe</LeadName>
+                    <LeadDesignation>Lead Data Scientist</LeadDesignation>
+                    <LinkedInLink href="https://www.linkedin.com/in/johndoe/" target="_blank">
+                      Connect on LinkedIn
+                    </LinkedInLink>
+                    <LeadSummary>
+                      John Doe is an expert in data science, specializing in large-scale data processing and predictive modeling. With a robust background in both theoretical and practical aspects of data science, John has successfully guided numerous projects to completion.
+                    </LeadSummary>
+                  </LeadDetails>
+                </div>
+              </ProjectLeadsContainer>
+            </HealthcareDescription>
+          </SectionRight>
+        </SectionFlexContainer>
         <br /> <br />
         <ApplyLink
           href="https://docs.google.com/forms/d/e/1FAIpQLSfCEBH_cL3zAyR3g96-MB3K02Athgiz_VxyhHvNXNbppNnOEQ/viewform"
