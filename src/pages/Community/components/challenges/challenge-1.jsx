@@ -107,22 +107,22 @@ const Challenge1 = () => {
             <li>Focus on User Experience and Accessibility.</li>
           </ImpactList>
         </ClimateActionDescription>
+        <SectionTitle>What Skills Will You Learn in This Challenge?</SectionTitle>
         <ClimateActionDescription>
-          <SectionTitle>Duration</SectionTitle>
-          Week 1: Project Initiation, Planning, and Market Research<br />
-          Week 2: Model Development<br />
-          Week 3: Testing, Refinement<br />
-          Week 4: Report Writing and Finalization
+          AI model development for text, audio, image, and video generation.<br />
+          Multi-modal content generation integration.<br />
+          Customization and personalization techniques.<br />
+          Implementing Ethical AI and content generation considerations.<br />
+          Building APIs using Django and integration on AWS with Amazon API Gateway.<br />
+          Deployment and Fine-Tuning on AWS Cloud/Azure.<br />
         </ClimateActionDescription>
         <ClimateActionDescription>
-          <SectionTitle>Technical Skills and Knowledge to be Gained</SectionTitle>
+          <SectionTitle>Project Duration-   4 Weeks   (Starts from 15th Sept 2024)</SectionTitle>
           <ImpactList>
-            <li>AI model development for text, audio, image, and video generation.</li>
-            <li>Multi-modal content generation integration.</li>
-            <li>Customization and personalization techniques.</li>
-            <li>Implementing Ethical AI and content generation considerations.</li>
-            <li>Building APIs using Django and integration on AWS with Amazon API Gateway.</li>
-            <li>Deployment and Fine-Tuning on AWS Cloud/Azure.</li>
+            <li>Week 1: Project Initiation, Planning, and Market Research</li>
+            <li>Week 2: Designing Multi-Agent Architecture and LLM Integration</li>
+            <li>Week 3: Developing the AI Content Creation Prototype, Testing and Refinement</li>
+            <li>Week 4: Project Report Submission with a Final Demo.</li>
           </ImpactList>
         </ClimateActionDescription>
         <ApplyLink href="https://forms.gle/8na2REeK7pxXPKGn9" target="_blank">
