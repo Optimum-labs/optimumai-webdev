@@ -12,15 +12,15 @@ const CTASection = () => {
                 <h2 className="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
                   <span>What Are You Looking For?</span>
                   <span className="text-3xl font-normal md:text-[40px]">
-                    Get Started Now
+                    Get Started Now  Crack Your Next Job Interview
                   </span>
                 </h2>
                 <p className="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
-                  Play is a powerful platform that helps you to create and manage your own challenges, and engage with your community.
+                  OptimumAI  is a AI & Data Science Upskilling platform that helps you to Learn , tranform and Crack Job Interviews with Real World Projects and engage with your  community for Collaboartive Projects.
                 </p>
                 <Link to="#"
                   className="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]">
-                  Start using Play
+                  Join a Project now
                 </Link>
               </div>
             </div>
