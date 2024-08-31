@@ -298,12 +298,12 @@ const AIForHealthcareAccessibility = () => {
                   <LeadImage src={leadImage2} alt="Project Lead 2" />
                   <LeadDetails>
                     <LeadName>John Doe</LeadName>
-                    <LeadDesignation>Lead Data Scientist</LeadDesignation>
+                    <LeadDesignation>AI Researcher</LeadDesignation>
                     <LinkedInLink href="https://www.linkedin.com/in/johndoe/" target="_blank">
                       Connect on LinkedIn
                     </LinkedInLink>
                     <LeadSummary>
-                      John Doe is an expert in data science, specializing in large-scale data processing and predictive modeling. With a robust background in both theoretical and practical aspects of data science, John has successfully guided numerous projects to completion.
+                      Swati Garg is an expert in data science, specializing in large-scale data processing and predictive modeling. With a robust background in both theoretical and practical aspects of data science, John has successfully guided numerous projects to completion.
                     </LeadSummary>
                   </LeadDetails>
                 </div>
