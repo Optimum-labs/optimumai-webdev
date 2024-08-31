@@ -118,9 +118,10 @@ const Challenge1 = () => {
         </ClimateActionDescription>
         <ClimateActionDescription>
           <SectionTitle>Project Duration - 4 Weeks (Starts from 15th Sept 2024)
-            <a href="https://docs.google.com/document/d/1K2kDCddwMrx0NLt6cokDdbyfsQzyuTWbIrIs1IrahiQ/edit?usp=sharing" style={{ marginLeft: '10px', fontSize: '1rem', color: '#2563eb' }}>
+{/*             <a href="https://docs.google.com/document/d/1K2kDCddwMrx0NLt6cokDdbyfsQzyuTWbIrIs1IrahiQ/edit?usp=sharing" style={{ marginLeft: '10px', fontSize: '1rem', color: '#2563eb' }}>
               View Problem Statement
-            </a></SectionTitle>
+            </a> */}
+          </SectionTitle>
           <ImpactList>
             <li>Week 1: Project Initiation, Planning, and Market Research</li>
             <li>Week 2: Designing Multi-Agent Architecture and LLM Integration</li>
@@ -128,9 +129,18 @@ const Challenge1 = () => {
             <li>Week 4: Project Report Submission with a Final Demo.</li>
           </ImpactList>
         </ClimateActionDescription>
-        <ApplyLink href="https://forms.gle/8na2REeK7pxXPKGn9" target="_blank">
+{/*         <ApplyLink href="https://forms.gle/8na2REeK7pxXPKGn9" target="_blank">
           Apply for Challenge
         </ApplyLink>
+      </Container> */}
+        <ButtonContainer>
+          <ButtonLink href="https://forms.gle/8na2REeK7pxXPKGn9" target="_blank">
+            Apply for Challenge
+          </ButtonLink>
+          <ButtonLink href="https://docs.google.com/document/d/1K2kDCddwMrx0NLt6cokDdbyfsQzyuTWbIrIs1IrahiQ/edit?usp=sharing">
+            View Problem Statement
+          </ButtonLink>
+        </ButtonContainer>
       </Container>
     </ClimateActionContainer>
   );
