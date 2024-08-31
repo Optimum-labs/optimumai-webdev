@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import img from "../../img/mock.png";
 import leadImage from "../../img/lead.jpeg"; // Add the image path for the project lead
-import leadImage2 from "../../img/lead2.png"; // Add the image path for the second project lead
+import leadImage2 from "../../img/lead2.jpeg"; // Add the image path for the second project lead
 
 
 const Container = styled.div`
@@ -213,7 +213,7 @@ const Challenge1 = () => {
             <LeadImage src={leadImage2} alt="Project Lead 2" />
             <LeadDetails>
               <LeadName>Swati Garg</LeadName>
-              <LeadDesignation> AI Researcher & Aws Data Architect </LeadDesignation>
+              <LeadDesignation> AI Researcher & Aws Architect </LeadDesignation>
               <LeadSummary>
                 Ph.D. in Physics with over 3 years of postdoctoral research experience, complemented <br />
                 by 6+ months as a Data Analyst/Scientist. Demonstrates strong analytical skills in <br />
@@ -221,7 +221,8 @@ const Challenge1 = () => {
                 Expertise includes feature engineering, machine learning, model building and deployment, <br />
                 and computer vision techniques. Proficient in creating user-friendly interfaces with Flask <br />
                 and Streamlit. Published over 15 papers in international journals and conferences. Also <br />
-                skilled as an AWS Data Architect, with experience in developing data pipelines, API implementation, and data modeling.
+                skilled as an AWS Data Architect, with experience in developing data pipelines, <br />
+                API implementation, and data modeling.
               </LeadSummary>
               <LinkedInLink href="https://www.linkedin.com/in/swati-garg-02513153/" target="_blank">
                 Connect on LinkedIn
