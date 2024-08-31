@@ -24,6 +24,10 @@ const NAVBAR_MENU = [
     'link': '/community'
   },
   {
+    'label': 'Courses',
+    'link': '/courses'
+  },
+  {
     'label': 'Contact',
     'link': '/contact'
   },  
