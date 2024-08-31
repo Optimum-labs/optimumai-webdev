@@ -59,6 +59,12 @@ const ImpactList = styled.ol`
   margin: 20px 0;
 `;
 
+const ButtonContainer = styled.div`
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+`;
+
 const ApplyLink = styled.a`
   padding: 10px 20px;
   border-radius: 8px;
