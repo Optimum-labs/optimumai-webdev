@@ -117,7 +117,10 @@ const Challenge1 = () => {
           Deployment and Fine-Tuning on AWS Cloud/Azure.<br />
         </ClimateActionDescription>
         <ClimateActionDescription>
-          <SectionTitle>Project Duration-   4 Weeks   (Starts from 15th Sept 2024)</SectionTitle>
+          <SectionTitle>Project Duration - 4 Weeks (Starts from 15th Sept 2024)
+            <a href="https://docs.google.com/document/d/1K2kDCddwMrx0NLt6cokDdbyfsQzyuTWbIrIs1IrahiQ/edit?usp=sharing" style={{ marginLeft: '10px', fontSize: '1rem', color: '#2563eb' }}>
+              View Problem Statement
+            </a></SectionTitle>
           <ImpactList>
             <li>Week 1: Project Initiation, Planning, and Market Research</li>
             <li>Week 2: Designing Multi-Agent Architecture and LLM Integration</li>
