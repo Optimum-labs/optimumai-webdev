@@ -297,13 +297,20 @@ const AIForHealthcareAccessibility = () => {
                 <div>
                   <LeadImage src={leadImage2} alt="Project Lead 2" />
                   <LeadDetails>
-                    <LeadName>John Doe</LeadName>
-                    <LeadDesignation>AI Researcher</LeadDesignation>
+                    <LeadName>Swati Garg</LeadName>
+                    <LeadDesignation>AI Researcher & Aws Architect</LeadDesignation>
                     <LinkedInLink href="https://www.linkedin.com/in/johndoe/" target="_blank">
                       Connect on LinkedIn
                     </LinkedInLink>
                     <LeadSummary>
-                      Swati Garg is an expert in data science, specializing in large-scale data processing and predictive modeling. With a robust background in both theoretical and practical aspects of data science, John has successfully guided numerous projects to completion.
+                    Ph.D. in Physics with over 3 years of postdoctoral research experience, complemented
+                    by 6+ months as a Data Analyst/Scientist. Demonstrates strong analytical skills in 
+                    collecting, organizing, analyzing, and disseminating large datasets with precision.
+                    Expertise includes feature engineering, machine learning, model building and deployment,
+                    and computer vision techniques. Proficient in creating user-friendly interfaces with Flask
+                    and Streamlit. Published over 15 papers in international journals and conferences. Also 
+                    skilled as an AWS Data Architect, with experience in developing data pipelines, API
+                    implementation, and data modeling.                    
                     </LeadSummary>
                   </LeadDetails>
                 </div>
