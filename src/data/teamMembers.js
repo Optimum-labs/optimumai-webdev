@@ -8,15 +8,15 @@ import PrathimaKadari from './community/prathima-kadari.png';
 
 
 const teamMembers = [
-    {
-      name: 'Muhammad Yahiya',
-      role: 'Founder & CEO',
-      imageUrl: 'https://avatars.githubusercontent.com/u/47945063?v=4',
-      social: {
-        email: '',
-        linkedin: 'https://www.linkedin.com/in/shaik-muhammad-yahiya/',
-      },
-    },
+    // {
+    //   name: 'Muhammad Yahiya',
+    //   role: 'Founder & CEO',
+    //   imageUrl: 'https://avatars.githubusercontent.com/u/47945063?v=4',
+    //   social: {
+    //     email: '',
+    //     linkedin: 'https://www.linkedin.com/in/shaik-muhammad-yahiya/',
+    //   },
+    // },
     {
       name: 'Basanth Kalanoor',
       role: 'CTO & Co-Founder',
