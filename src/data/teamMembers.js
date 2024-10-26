@@ -6,7 +6,6 @@ import BasanthKalanoor from './community/basanth-kalanoor.jpg';
 // import MuhammadYahiya from './community/muhammad-yahiya.jpg';
 import PrathimaKadari from './community/prathima-kadari.png';
 
-
 const teamMembers = [
     // {
     //   name: 'Muhammad Yahiya',
