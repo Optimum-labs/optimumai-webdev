@@ -1,8 +1,8 @@
 import TracyGreenwood from './community/tracy-greenwood.jpg';
 import KrishnaKishoreGajjala from './community/krishna-kishore.png';
-// import AnandShende from './community/anand-shende.jpg';
-// import AjayDhangar from './community/ajay-dhangar.jpg';
-// import BasanthKalanoor from './community/basanth-kalanoor.jpg';
+import AnandShende from './community/anand-shende.jpg';
+import AjayDhangar from './community/ajay-dhangar.jpg';
+import BasanthKalanoor from './community/basanth-kalanoor.jpg';
 // import MuhammadYahiya from './community/muhammad-yahiya.jpg';
 import PrathimaKadari from './community/prathima-kadari.png';
 
